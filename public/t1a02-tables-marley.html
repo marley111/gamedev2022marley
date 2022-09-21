@@ -15,7 +15,7 @@
       
     <title>Lists and Tables</title>
     
-    <h3>Version 0.0.8
+    <h3>Version 0.0.9
     
   </head>
   
@@ -64,10 +64,20 @@
   </table><br>
  
   <table border=0>
-  <tr><td><img width=50 src="http://hairlesscatblog.com/wp-content/uploads/2014/02/types-of-hairless-cats.jpg"></td><td><a href="http://www.google.ca">google.ca</a></td></tr>
-  <tr><td><a href="http://www.google.ca">google.ca</a></td><td><img width=50 src="http://hairlesscatblog.com/wp-content/uploads/2014/02/types-of-hairless-cats.jpg"></td></tr>
+  <tr><td><img width=50 src="http://hairlesscatblog.com/wp-content/uploads/2014/02/types-of-hairless-cats.jpg"></td><td><a href="http://www.google.ca">hi</a></td></tr>
+  <tr><td><a href="http://www.google.ca">hi</a></td><td><img width=50 src="http://hairlesscatblog.com/wp-content/uploads/2014/02/types-of-hairless-cats.jpg"></td></tr>
     
     <br><br><br>
+    
+    <h3><u>Advanced</u></h3>
+    
+    <image id="myImage01" src="http://hairlesscatblog.com/wp-content/uploads/2014/02/types-of-hairless-cats.jpg" style="position:relative; left:0; top:0; width:50; height:50; "><br>
+      
+      <input type=button value="Go left" onclick="{
+                                                  document.getElementById('myImage01').style.left = '200px'
+                                                   document.getElementById('myDiv01').innerHTML = 'It went left'
+                                                  }">
+      <div id="myDiv01">...</div>
   </center>
   </body>
 
