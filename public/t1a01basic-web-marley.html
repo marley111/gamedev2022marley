@@ -3,7 +3,7 @@
 <head>
   <title>My Webpage</title>
   
-  <h4> Version 0.0.9 </h4>
+  <h4> Version 0.0.8 </h4>
   
   <style type="text/css">
  body {
@@ -65,24 +65,16 @@
 }">
   <input type="button" value="2. Variables" onclick="{
    document.getElementById('myDiv01').innerHTML = 'store stuff<br>'
-  +'x = 3<br>myY = \'Marley\''
+  +'x = 3<br>myY = \'marley\''
 }">
   <input type="button" value="3. Decisions" onclick="{
-   document.getElementById('myDiv01').innerHTML = 'decide stuff based on stored stuff'
+   document.getElementById('myDiv01').innerHTML = 'decide stuff based on stored stuff<br>'
   + 'if(x==3) {}<br>if (x <= 3){} else{}<br>if ((x > 3) && (x < 9)) {} else {}'
 }">
-  <input type="button" value="4. Decisions" onclick="{
-   document.getElementById('myDiv01').innerHTML = `
-  Decisions use the if statement to make true 
-  false variable decisions<br>
-<pre>
-if (hour < 18) {
-  greeting = \'Good day\';
-}
-</pre>
+ 
 <input type="button" value="5. Objects" onclick="{
-   document.getElementById('myDiv01').innerHTML = 'a named list of variables'
- + 'x = {age:20, name:'Marley'} // set object<br>// uses object<br>x.age<br>x.name'
+   document.getElementById('myDiv01').innerHTML = 'a named list of variables<br>'
+ + 'x = {age:15, name:'marley'} // set object<br>// uses object<br>x.age<br>x.name'
 }">
 <input type="button" value="6. Functions" onclick="{
    document.getElementById('myDiv01').innerHTML = 'named group of code that can be called multiple times'
@@ -90,22 +82,22 @@ if (hour < 18) {
   +'myFun() // activates the function'
 }">
 <input type="button" value="7. Loops" onclick="{
-   document.getElementById('myDiv01').innerHTML = 'repeat stuff'
+   document.getElementById('myDiv01').innerHTML = 'repeat stuff<br>'
   +'for (x=0; x < 3; x++){<br> // example for loop'
 }">
 <input type="button" value="8.Arrays" onclick="{
-   document.getElementById('myDiv01').innerHTML = 'numbered list of variables'
+   document.getElementById('myDiv01').innerHTML = 'numbered list of variables<br>'
   +'x[0] = 3;<br>x[1] = 6;'
 }">
 <input type="button" value="9. Classes" onclick="{
-   document.getElementById('myDiv01').innerHTML = 'groups variables and functions to make programming easier'
+   document.getElementById('myDiv01').innerHTML = 'groups variables and functions to make programming easier<br>'
   +'methods --> functions<br>properties --> variables'
 }">
 
-`}"><br>
+
                                                                                             
 
-You do: 2:variables, 3:loops, 5:functions, 6:events, 7:arrays, 8:objects, 9:classes <br>
+
 
 <div id="myDiv01">...</div>
 
