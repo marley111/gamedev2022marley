@@ -3,7 +3,7 @@
 <head>
   <title>My Webpage</title>
   
-  <h4> Version 0.0.8 </h4>
+  <h4> Version 0.0.9 </h4>
   
   <style type="text/css">
  body {
@@ -63,6 +63,14 @@
    document.getElementById('myDiv01').innerHTML = 'Input adffgdsfsgsdfdfg<br>'
    +'sdfg<br>sdfg<br>output is...'
 }">
+  <input type="button" value="2. Variables" onclick="{
+   document.getElementById('myDiv01').innerHTML = 'store stuff<br>'
+  +'x = 3<br>myY = \'Marley\''
+}">
+  <input type="button" value="3. Decisions" onclick="{
+   document.getElementById('myDiv01').innerHTML = 'decide stuff based on stored stuff'
+  + 'if(x==3) {}<br>if (x <= 3){} else{}<br>if ((x > 3) && (x < 9)) {} else {}'
+}">
   <input type="button" value="4. Decisions" onclick="{
    document.getElementById('myDiv01').innerHTML = `
   Decisions use the if statement to make true 
@@ -72,6 +80,27 @@ if (hour < 18) {
   greeting = \'Good day\';
 }
 </pre>
+<input type="button" value="5. Objects" onclick="{
+   document.getElementById('myDiv01').innerHTML = 'a named list of variables'
+ + 'x = {age:20, name:'Marley'} // set object<br>// uses object<br>x.age<br>x.name'
+}">
+<input type="button" value="6. Functions" onclick="{
+   document.getElementById('myDiv01').innerHTML = 'named group of code that can be called multiple times'
+  +'function myFun() { } // defines a group of code'
+  +'myFun() // activates the function'
+}">
+<input type="button" value="7. Loops" onclick="{
+   document.getElementById('myDiv01').innerHTML = 'repeat stuff'
+  +'for (x=0; x < 3; x++){<br> // example for loop'
+}">
+<input type="button" value="8.Arrays" onclick="{
+   document.getElementById('myDiv01').innerHTML = 'numbered list of variables'
+  +'x[0] = 3;<br>x[1] = 6;'
+}">
+<input type="button" value="9. Classes" onclick="{
+   document.getElementById('myDiv01').innerHTML = 'groups variables and functions to make programming easier'
+  +'methods --> functions<br>properties --> variables'
+}">
 
 `}"><br>
                                                                                             
