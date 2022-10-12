@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+
+      h1, h2, h3, h4, h5, h6 {
+        color:  white;
+        font-family:
+      }
+      body{
+        background-size: cover;
+      }
+   .wrapper{
+        
+        display: inline-block;
+        border: none;
+        margin: 20px;
+        background: black;
+    }
+a:link {
+color: green;
+}
+a:hover {
+color: white;
+}
+
+    </style>
+  <title>Decisions</title>
+  
+  <h3>Version 0.0.0</h3>
+  </head>
+  <body background=
+        "https://i.pinimg.com/564x/57/99/d6/5799d658b205497beea9e90fc9484e9a.jpg">
+    
+    <p><h1>Decisions</h1>
+    <h3>By Marley</h3>
+    
+    <h4>(Note: ! = Not, && = And, || = OR)</h4>
+    
+    <div class="wrapper"><h3><strong>Example input output code</strong></h3>
+    <pre>
+    let myHour = 20
+    if (myHour < 18) {
+    let myGreeting = 'Good day';
+    }
+    </pre></div>
+      
+     <div class="wrapper"><h3><strong>Example working code</strong></h3>
+       
+       <input id="myNum01" type=number value="4"><br>
+       
+       <input type=button value="Simple if Statement for Decision Making" onclick="{
+        let nyIn01 = parseFloat(document.getElementById('myNum01').value)
+        if (myIn01 >= 3){
+            document.getElementById('myDiv01').innerHTML = myIn01 + ' is greater than 3'
+         }
+   }">
+       <input type=button value="if...else" onlick="{
+      let myIn01 = parseFloat(document.getElementById('myNum01').value)
+     if (myIn01 >= 3){                                               
+      document.getElementById('myDiv01').innetHTML = myIn01 + 'is greater than 3'
+   } else {
+      document.getElementById('myDiv01').innetHTML = myIn01 + 'is greater less 3'}
+   }">                                              
+    <input type=button value="Complex if" onclick="{
+    let myIn01 = parseFloat(document.getElementById('myNum01').value)
+    if ((myIn01 != 3 || myIn01 > -3) && myIn01 <=100){                                             
+        document.getElementById('myDiv01').innerHTML = myIn01 + ' is complex'
+       } else {    
+         document.getElementById('myDiv01').innerHTML = myIn01 + ' is not complex'}
+    }">
+      </div>
+      <div id="myDiv01">...</div>
+      </body>
+    </html>
