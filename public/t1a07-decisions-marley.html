@@ -27,7 +27,7 @@ color: white;
     </style>
   <title>Decisions</title>
   
-   <h3><font color="black">Version 0.0.1</font></h3>
+   <h3><font color="black">Version 0.0.2</font></h3>
   </head>
   <body background=
         "https://i.pinimg.com/564x/57/99/d6/5799d658b205497beea9e90fc9484e9a.jpg">
@@ -51,7 +51,7 @@ color: white;
        <input id="myNum01" type=number value="4"><br>
        
        <input type=button value="Simple if Statement for Decision Making" onclick="{
-        let nyIn01 = parseFloat(document.getElementById('myNum01').value)
+        let myIn01 = parseFloat(document.getElementById('myNum01').value)
         if (myIn01 >= 3){
             document.getElementById('myDiv01').innerHTML = myIn01 + ' is greater than 3'
          }
@@ -59,9 +59,9 @@ color: white;
        <input type=button value="if...else" onlick="{
       let myIn01 = parseFloat(document.getElementById('myNum01').value)
      if (myIn01 >= 3){                                               
-      document.getElementById('myDiv01').innetHTML = myIn01 + 'is greater than 3'
+      document.getElementById('myDiv01').innerHTML = myIn01 + 'is greater than 3'
    } else {
-      document.getElementById('myDiv01').innetHTML = myIn01 + 'is greater less 3'}
+      document.getElementById('myDiv01').innerHTML = myIn01 + 'is greater less 3'}
    }">                                              
     <input type=button value="Complex if" onclick="{
     let myIn01 = parseFloat(document.getElementById('myNum01').value)
