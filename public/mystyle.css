@@ -1,8 +1,5 @@
- h1, h2, h3, h4, h5, h6 {
+ head, body {
         color:  white;
-        font-family:
-      }
-    body {
         background-size: cover;
       }
    .wrapper {
