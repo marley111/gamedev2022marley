@@ -1,0 +1,23 @@
+ h1, h2, h3, h4, h5, h6 {
+        color:  white;
+        font-family:
+      }
+    body {
+        background-size: cover;
+      }
+   .wrapper {
+        display: inline-block;
+        border: none;
+        margin: 20px;
+        background: black;
+      }
+    b {
+      color: green;
+      background-color: white;
+      }
+    a:link {
+    color: green;
+      }
+    a:hover {
+    color: white;
+      }
