@@ -4,7 +4,7 @@
       }
    .wrapper {
         display: inline-block;
-        border: solid-black 10px;
+        border: none;
         margin: 20px;
         background: black;
       }
