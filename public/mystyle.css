@@ -18,3 +18,7 @@
     a:hover {
     color: white;
       }
+    a:visited {
+    text-decoration: none;
+    decoration: none;
+      }
