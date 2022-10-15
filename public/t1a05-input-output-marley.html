@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+  <link rel="stylesheet" href="mystyle.css">
+
+    <title>Input Output by Marley</title>
+    
+     <h3>Version 0.1.0
+
+  </head>
+    
+    <body background= "https://i.pinimg.com/564x/67/67/00/676700651bfe4139528ad334c49d393c.jpg">
+      
+      <p><h1><u>Input Output</u></h1>
+        <h3>By Marley</h3></p>
+    
+    <a href="https://www.w3schools.com/jsref/prop_html_innerhtml.asp">Good input output reference</a>
+    
+    <h4> Example input output code</h4>
+    <pre>
+    <h4>let myIn01 = document.getElementById('myNum01').value
+    document.getElementById('myDiv').innerHTML = myIn01 + 'squared = ' + myIn01*myIn01</h4>
+    <br>
+    <h4>document.getElementById("output").innerHTML = "Hello, "+prompt("Enter your name:");
+    
+    </pre>
+    
+    <h4> Example working code</h4>
+    
+    <input id="myNum01" type=number value="4" ><br>
+    
+    <input type=button value="myEvent squared" onclick="{
+                                                        let myIn01 = parseFloat(document.getElementById('myNum01').value)
+                                                        let myAnswer = myIn01 * myIn01
+                                                        document.getElementById('myDiv01').innerHTML =
+                                                        myIn01 + ' squared = ' + myAnswer
+                                                        }"><br>
+      <div id="myDiv01">...</div>
+      
+      <p id="output"></p>
+    
+    </body>
+</html>
