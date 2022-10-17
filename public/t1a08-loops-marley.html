@@ -4,21 +4,46 @@
     
 <link rel="stylesheet" href="mystyle.css">
 
-    <title></title>
+    <title>Loops</title>
 
-    <h3>Version 0.0.0
+    <h4>Version 0.0.0</h4>
 
   </head>
 
     <body background= 
-          "">
-      
+          "https://i.pinimg.com/564x/68/4a/f1/684af1ce9ebf741a7283cf322d1bd687.jpg">
+      <p><h1>Loops</h1>
+      <h3>By Marley</h3></p>
+  
+  <a href="https://www.w3schools.com/java/java_for_loop.asp">Loop Reference</a><br>
+  
+  <h3>Example Input Output code</h4>
+  <pre>
+  
+  </pre>
+  
+  <h3>Example working code</h3>
+  
+ Max loops: <input id="MyNum01" type=number value="4"><br>
+  
+  <input type=button value="Basic For loop with Decisions" onclick="{
+                                                                    document.getElementById('myDiv01').innerHTML = ''
+                                                                    let myTemp = ''
+                                                                    
+                                                                    let myMax = parseInt(document.getElementById('myNum01').value)
+                                                                    
+                                                                    for (let myLoop = 0; myLoop < myMax; myLoop++ ){
+                                                                      if (myLoop * 2 > myMax){
+                                                                        myTemp += ' cool '
+                                                                    }
+                                                                    
+                                                                      myTemp += 'Loop number: ' + myLoop + '<br>'
+                                                                    }
+                                                                    document.getElementById('myDiv01').innerHTML = myTemp
+  }">
+  |
 
+  <div id="myDiv01">...</div>
   </body>
 
 </html>
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Priva
