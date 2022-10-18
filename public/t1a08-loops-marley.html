@@ -6,7 +6,7 @@
 
     <title>Loops</title>
 
-    <h4>Version 0.0.4</h4>
+    <h4>Version 0.0.5</h4>
 
   </head>
 
@@ -90,7 +90,7 @@
     document.getElementById('myDiv01').innerHTML = myTemp 
 }">
   
-  <input type=button value="Odd number identifier" onclick="{
+  <input type=button value="Dividable by 3 identifier" onclick="{
     document.getElementById('myDiv01').innerHTML = ''
     let myTemp = ''
 
@@ -98,8 +98,8 @@
 
     for (let myLoop = 0; myLoop < myMax; myLoop++ ){
 
-     if (myLoop % 3 == 3 0){
-      myTemp += '<font style=\'color:blue;\'> Dividable by 3 </font>
+     if (myLoop % 3 == 0){
+      myTemp += '<font style=\'color:blue;\'> Dividable by 3 </font>'
    }
 
       myTemp += 'Loop number: ' + myLoop + '<br>'
