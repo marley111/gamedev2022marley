@@ -6,7 +6,7 @@
 
     <title>Decisions</title>
 
-    <h4>Version 0.0.3</h4>
+    <h4>Version 0.0.4</h4>
 
   </head>
 
@@ -40,7 +40,7 @@
     
     <input type=button value="Get greeting" onclick="{
     let myHour01 = parseFloat(document.getElementById('myHour01').value)
-    if (myHour01 <= 18){
+    if (myHour01 < 18){
       document.getElementById('myDiv01').innerHTML = 'good day'
       }
    }">
