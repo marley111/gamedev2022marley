@@ -19,5 +19,6 @@
     color: white;
       }
     a:visited {
-    color: green;
+   text-decoration: none; 
+    decoration: none; 
       }
