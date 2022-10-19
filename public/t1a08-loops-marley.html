@@ -6,7 +6,7 @@
 
     <title>Loops</title>
 
-    <h4>Version 0.1.4 </h4>
+    <h4>Version 0.1.5 </h4>
 
   </head>
 
@@ -37,19 +37,21 @@
     document.getElementById('myDiv01').innerHTML = myTemp 
 }">
   
-  <input type=button value="Backwards loop test" onclick="{
+  <input type=button value="Basic with Decisions Bad" onclick="{
     document.getElementById('myDiv01').innerHTML = ''
     let myTemp = ''
 
     let myMax = parseInt(document.getElementById('myNum01').value)
 
-    for (let myLoop = myMax; myLoop == myMax; myLoop -= 1 ){
-
+    for (let myLoop = 0; myLoop < myMax; myLoop -= 1 ){
+        if (myLoop * 2 < myMax){
+        myTemp += '<font style=\'color:grey;\'> Haha </font>'
+        }
       myTemp += 'Loop number: ' + myLoop + '<br>'
     }
     document.getElementById('myDiv01').innerHTML = myTemp 
 }">
- <input type=button value="Basic For loop with Decisions" onclick="{
+ <input type=button value="Basic with Decisions" onclick="{
     document.getElementById('myDiv01').innerHTML = ''
     let myTemp = ''
 
@@ -58,7 +60,7 @@
     for (let myLoop = 0; myLoop < myMax; myLoop++ ){
 
        if (myLoop * 2 > myMax){
-          myTemp += '<font style=\'color:grey;\'> Cool </font>'
+          myTemp += '<font style=\'color:grey;\'> Wow! </font>'
       }
 
       myTemp += 'Loop number: ' + myLoop + '<br>'
