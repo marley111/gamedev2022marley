@@ -139,27 +139,7 @@
     }
     document.getElementById('myDiv01').innerHTML = myTemp 
 }">
-  
-  <input type=button value="Rainbow button" onclick="{
-    document.getElementById('myDiv01').innerHTML = ''
-    let myTemp = ''
-
-    let myMax = parseInt(document.getElementById('myNum01').value)
-
-    for (let myLoop = 0; myLoop < myMax; myLoop++ ){
-     if (myLoop % 2 == 1){
-    myTemp += '<font style=\'color:red;\'> Red </font>                                                 
-    }
-    if (myLoop % 2 == 0){
-    myTemp += '<font style=\'color:green;\'> Green </font>                                                 
-    }
-     if (myLoop % 3 == 0){
-    myTemp += '<font style=\'color:blue;\'> Blue </font>
-    }
-    myTemp += 'Loop number: ' + myLoop + '<br>'
-    }
-    document.getElementById('myDiv01').innerHTML = myTemp 
-}">
+ 
   <br>
   <div class="wrapper" id="myDiv01">...</div>
   
