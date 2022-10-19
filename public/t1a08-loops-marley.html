@@ -6,7 +6,7 @@
 
     <title>Loops</title>
 
-    <h4>Version 0.0.8</h4>
+    <h4>Version 0.0.9</h4>
 
   </head>
 
@@ -26,6 +26,17 @@
   
   Max loops: <input id="myNum01" type=number value="4" ><br> 
   
+
+
+<input type=button value="Basic For loop only" onclick="{
+    let myTemp = ''
+    let myMax = parseInt(document.getElementById('myNum01').value)
+    for (let myLoop = 0; myLoop < myMax; myLoop++ ){
+      myTemp += 'Loop number: ' + myLoop + '<br>'
+    }
+    document.getElementById('myDiv01').innerHTML = myTemp 
+}">
+  
  <input type=button value="Basic For loop with Decisions" onclick="{
     document.getElementById('myDiv01').innerHTML = ''
     let myTemp = ''
@@ -42,17 +53,6 @@
     }
     document.getElementById('myDiv01').innerHTML = myTemp 
 }">
-
-
-<input type=button value="Basic For loop only" onclick="{
-    let myTemp = ''
-    let myMax = parseInt(document.getElementById('myNum01').value)
-    for (let myLoop = 0; myLoop < myMax; myLoop++ ){
-      myTemp += 'Loop number: ' + myLoop + '<br>'
-    }
-    document.getElementById('myDiv01').innerHTML = myTemp 
-}">
-
   <input type=button value="Half identifier" onlclick="{
      document.getElementById('myDiv01').innerHTML = ''
      let myTemp = ''
@@ -61,7 +61,7 @@
                                         
      for (let myLoop = 0; < myMax; myLoop++ ){
                                         
-        if (myLoop * 2 = myMax){
+        if (myLoop * 2 == myMax){
             myTemp += ' half + myMax + '='' 
       }
       myTemp += 'Loop number: ' + myLoop + '<br>'
