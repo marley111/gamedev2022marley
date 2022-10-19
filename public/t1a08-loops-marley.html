@@ -6,7 +6,7 @@
 
     <title>Loops</title>
 
-    <h4>Version 0.1.1 </h4>
+    <h4>Version 0.1.2 </h4>
 
   </head>
 
@@ -53,21 +53,7 @@
     }
     document.getElementById('myDiv01').innerHTML = myTemp 
 }">
-  <input type=button value="Half identifier" onlclick="{
-     document.getElementById('myDiv01').innerHTML = ''
-     let myTemp = ''
-                                        
-     let myMax = parseInt(document.getElementById('myNum01').value)
-                                        
-     for (let myLoop = 0; < myMax; myLoop++ ){
-                                        
-        if (myLoop * 2 == myMax){
-            myTemp += ' half + myMax + '='' 
-      }
-      myTemp += 'Loop number: ' + myLoop + '<br>'
-    }   
-    document.getElementById('myDiv01').innerHTML = myTemp
-  }">    
+  
   
   <input type=button value="Half identifier" onclick="{
     document.getElementById('myDiv01').innerHTML = ''
@@ -78,7 +64,7 @@
     for (let myLoop = 0; myLoop < myMax; myLoop++ ){
 
        if (myLoop * 2 == myMax){
-          myTemp += '<font style=\'color:purple;\'> Half </font> '+ myMax +' ='
+          myTemp += '<font style=\'color:purple;\'> Half '+ myMax +' = </font>'
       }
 
       myTemp += 'Loop number: ' + myLoop + '<br>'
