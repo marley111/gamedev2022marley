@@ -6,7 +6,7 @@
 
     <title>Input Output by Marley</title>
     
-     <h3>Version 0.1.5
+     <h3>Version 0.1.6
 
   </head>
     
@@ -49,6 +49,13 @@
                                                         document.getElementById('myDiv01').innerHTML =
                                                         myIn01 + ' plus 1 = ' + myAnswer
                                                         }">
+   
+    <input type=button value="Number Minus 1" onclick="{
+                                                        let myIn01 = parseFloat(document.getElementById('myNum01').value)
+                                                        let myAnswer = myIn01 -=1
+                                                        document.getElementById('myDiv01').innerHTML =
+                                                        myIn01 + ' minus 1 = ' + myAnswer
+                                                        }">                                                     
                                                         
                                                         <br>
       <div id="myDiv01">...</div>
