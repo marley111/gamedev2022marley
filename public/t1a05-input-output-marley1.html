@@ -6,7 +6,7 @@
 
     <title>Input Output by Marley</title>
     
-     <h3>Version 0.1.0
+     <h3>Version 0.1.2
 
   </head>
     
@@ -38,6 +38,12 @@
                                                         let myAnswer = myIn01 %2
                                                         document.getElementById('myDiv01').innerHTML =
                                                         myIn01 + ' divided by 2 = ' + myAnswer
+                                                        }"><br>
+    <input type=button value="Number Plus 1" onclick="{
+                                                      let myIn01 = parseFloat(document.getElementById('myNum01').value)
+                                                        let myAnswer = myIn01 ++
+                                                        document.getElementById('myDiv01').innerHTML =
+                                                        myIn01 + ' plus 1 = ' + myAnswer
                                                         }"><br>
       <div id="myDiv01">...</div>
     
