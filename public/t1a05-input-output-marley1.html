@@ -6,7 +6,7 @@
 
     <title>Input Output by Marley</title>
     
-     <h3>Version 0.0.9
+     <h3>Version 0.1.0
 
   </head>
     
@@ -27,11 +27,17 @@
     
     <input id="myNum01" type=number value="4" ><br>
     
-    <input type=button value="myEvent squared" onclick="{
+    <input type=button value="Number Squared" onclick="{
                                                         let myIn01 = parseFloat(document.getElementById('myNum01').value)
                                                         let myAnswer = myIn01 * myIn01
                                                         document.getElementById('myDiv01').innerHTML =
                                                         myIn01 + ' squared = ' + myAnswer
+                                                        }"><br>
+    <input type=button value="Number Divided by 2" onclick="{
+                                                        let myIn01 = parseFloat(document.getElementById('myNum01').value)
+                                                        let myAnswer = myIn01 %2
+                                                        document.getElementById('myDiv01').innerHTML =
+                                                        myIn01 + ' divided by 2 = ' + myAnswer
                                                         }"><br>
       <div id="myDiv01">...</div>
     
