@@ -6,7 +6,7 @@
 
     <title>Functions</title>
 
-    <h4>Version 0.0.0</h4>
+    <h4>Version 0.0.1</h4>
 
   </head>
 
@@ -21,6 +21,34 @@
         return myReply
         
       }
+      </script>
+      
+     <p><h1 align=center>Functions</h1>
+      <h3>By Marley</h3></p>
+  
+  <a href="https://www.w3schools.com/js/js_functions.asp">
+    Function Reference</a><br>
+  
+  <h4>Functions are used to sensibly organize code. THen they are "Called" elsewhere.<br>
+    Information can also be passed to functions (that's more advanced.)
+    
+    <h3> Example Functions Code </h3>
+    <pre>
+    function myGrabNumber(){
+      return parseInt(document.getElementById('myText01').value)
+    }
+    </pre>
+    
+    <h3> Example Working Code </h3>
+    
+    <input type=text id="myText01" value="3"><br>
+    
+    <input type=button value="Function Example" onClick="{
+        document.getElementById('myDiv01').innerHTML = myExampleFunction()
+    }">
+    
+    <div id="MyDiv01">...</div>
+    
 
   </body>
 
