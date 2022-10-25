@@ -2,7 +2,8 @@
 <html>
 <head>
 <script>
-  
+   
+
    
 function myExampleFunction(){
    let myIn01 = parseInt(document.getElementById('myText01').value)
@@ -11,23 +12,31 @@ function myExampleFunction(){
    return myReply
 
 }
+  
+  function myExampleFunction2(){
+    let myIn01 = parseInt(document.getElementById('myText01').value)
+    let myDifference = myIn01 - myIn01
+    let myReply = myIn01 + ' - ' + myIn01 + ' = ' + myDifference
+    
+    }
+ 
 
 </script>
 
-Version 0.0.3
+Version 0.0.1
    </head>
    <body background=
-         "https://i.pinimg.com/564x/b2/ab/d0/b2abd0a92764e724c60d56ee8f4b3453.jpg">
+         "https://i.pinimg.com/564x/12/26/7d/12267d8a8b79139e53766ddbf4d034cd.jpg">
       
 <p><h1 align=center>Functions</h1>
       <h3>By Marley</h3></p>
    
-   <hr>
+   
 
 <a href="https://www.w3schools.com/js/js_functions.asp">Good reference to Javascript functions</a><br>
 
-Functions are used to sensibly organzie code. Then they are "Called" elsewhere. 
-Information can also be passed to functions (that's more advanced).
+Functions are used to sensibly organize code. Then they are "Called" elsewhere. 
+Information can also be passed to functions (that's more advanced.)
 
 <h4> Example Functions code</h4>
 <pre>
@@ -44,9 +53,12 @@ function myGrabNumber(){
 <input type=button value="Function Example" onClick="{
    document.getElementById('myDiv01').innerHTML =  myExampleFunction()
 }">
+<input type=button value="Other Function" onClick="{
+    document.getElementById('myDiv01').innerHTML =  myExampleFunction2()
+ }">                                                  
 
 <div id="myDiv01">...</div>
 
- 
+  </body>
 
 </html>
