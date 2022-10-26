@@ -4,7 +4,7 @@
  
  <link rel="stylesheet" href="mystyle.css">
  
-Version 0.1.0 <br>
+Version 0.1.1 <br>
  <title>Events</title>
  
  </head>
@@ -22,12 +22,6 @@ Version 0.1.0 <br>
 
 Events are HTML code that activates Javascript code 
 
-<h4> Example Events code</h4> 
-<pre> 
-<b id="myB01" onMouseOut="{ 
-   document.getElementById('myB01').innerHTML = 'This is bold.'
-}"> Bold stuff here </b>
-</pre> 
 
 <h4> Example working event</h4> 
 
@@ -40,11 +34,15 @@ Events are HTML code that activates Javascript code
 <div id="myDiv01">...</div> 
 <br>
 <b id="myB02" onMouseOut="{ 
-   document.getElementById('myB02').innerHTML = 'This is nice.'
+   document.getElementById('myB02').innerHTML = 'MouseOut'
 }"   onMouseOver = "{
-   document.getElementById('myB02').innerHTML = 'This is cool.'
-}"> This is bold</b> <br><br>
-
+   document.getElementById('myB02').innerHTML = 'MouseOver'
+}"> This is bold</b>
+ 
+<b id="myB01" onMouseOut="{ 
+   document.getElementById('myB01').innerHTML = 'MouseOut'
+}"> Go here </b>
+ 
 <script>
  
  function myFunction() {
