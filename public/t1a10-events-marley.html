@@ -4,7 +4,7 @@
  
  <link rel="stylesheet" href="mystyle.css">
  
-Version 0.0.9 <br>
+Version 0.1.0 <br>
  <title>Events</title>
  
  </head>
@@ -33,12 +33,12 @@ Events are HTML code that activates Javascript code
 
 <input type=text id="myText01" value="type something" onblur="myFunction()"><br> 
 
-<input type=button value="Example onClick" onClick="{ 
+<input type=button value="onClick + onBlur" onClick="{ 
    document.getElementById('myDiv01').innerHTML = document.getElementById('myText01').value
 }"> 
 
 <div id="myDiv01">...</div> 
-
+<br>
 <b id="myB02" onMouseOut="{ 
    document.getElementById('myB02').innerHTML = 'This is nice.'
 }"   onMouseOver = "{
@@ -55,6 +55,6 @@ Events are HTML code that activates Javascript code
 </script>
  
  
-You do at least 8 other events:<br> 
-onClick, onDBClick, onChange, onBlur, onFocus, orMouseMove, onTouch, onKeyDown, onKeyPress, onDragStart, onTouchStart, onTouchEnd, onTouchMove 
+<hidden>You do at least 8 other events:<br> 
+onClick, onDBClick, onChange, onBlur, onFocus, orMouseMove, onTouch, onKeyDown, onKeyPress, onDragStart, onTouchStart, onTouchEnd, onTouchMove</hidden> 
 
