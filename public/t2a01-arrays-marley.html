@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+<link rel="stylesheet" href="mystyle.css">
+
+    <title>Arrays</title>
+
+    <h4>Version 0.0.0</h4>
+
+  </head>
+
+    <body background= 
+          "https://i.pinimg.com/564x/9a/9c/0b/9a9c0bcdb2e77a1588c8e06d83337907.jpg">
+      
+      <p><h1 align=center>Arrays</h1>
+      <h3>By Marley</h3></p>
+  
+  <h4>Arrays are stored number variables</h4>
+  
+  <h3>Example Array code</h3>
+  <pre>
+  
+  myArray = new Array()
+  myArray[0] = 'Fred'
+  myArray[1] = 'Mary'
+  
+  </pre>
+  
+  <h3> Example working Array code </h4>
+  
+  Max Array Entry: <input type=text id="myText01" value="3"><br>
+  
+  <input type=button value="Example onClick" onClick="{
+                                                      let myTemp = document.getElementById('myText01').value
+                                                      let mySum = ''
+                                                      document.getElementById('myDiv01').innerHTML = ' '
+                                                      
+                                                      myArray = new Array()
+                                                      myArray[0] = 'Fred'
+                                                      myArray[1] = 'Mary'
+                                                      myArray[2] = 'Zizzy'
+                                                      
+                                                      for (let myLoop=0; myLoop < myTemp; myLoop++){
+                                                        mySum += 'Loop #: ' + myLoop + ' array entry: ' + myArray[myLoop]+'<br>
+                                                      }
+                                                      document.getElementById('myDiv01').innerHTML = mySum
+                                                      }">
+  <div id="myDiv01">...</div>
+  
+  <br>
+
+  </body>
+
+</html>
