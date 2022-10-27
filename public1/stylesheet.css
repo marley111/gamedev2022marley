@@ -1,6 +1,7 @@
  head, body {
         color:  #A1BFE9;
         background-color: #BBD7FF;
+        font-family: arial;
       }
    .wrapper {
         display: inline-block;
