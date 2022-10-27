@@ -1,0 +1,23 @@
+ head, body {
+        color:  #A1BFE9;
+        background-color: #BBD7FF;
+      }
+   .wrapper {
+        display: inline-block;
+        border: none;
+        margin: 20px;
+        background: black;
+      }
+    b {
+      color: #8AAAD6;
+      }
+    a:link {
+    color: #8AAAD6;
+      }
+    a:hover {
+    color: #A1BFE9;
+      }
+    a:visited {
+   text-decoration: none; 
+    decoration: none; 
+      }
