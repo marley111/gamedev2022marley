@@ -4,7 +4,7 @@
  
  <link rel="stylesheet" href="mystyle.css">
  
-Version 0.3.7 <br>
+Version 0.3.8 <br>
  <title>Events</title>
  
  </head>
@@ -24,6 +24,24 @@ Version 0.3.7 <br>
 
 Events are HTML code that activates Javascript code 
 
+ <h4> Example working code</h4>
+ 
+ <pre>
+ 
+ <script>
+
+  function KeyDownFunction() {
+  document.getElementById("myText01").style.backgroundColor = "red";
+}
+  function KeyUpFunction() {
+  document.getElementById("myText01").style.backgroundColor = "green";
+}
+ 
+function FocusFunction() {
+ document.getElementById("myText01").style.backgroundColor = "yellow";
+}
+</script>
+</pre>
 
 <h4> Example working event</h4> 
 
@@ -49,17 +67,4 @@ Change the number: <input type=text id="myText01" value="3" onFocus="FocusFuncti
 }"> Go here </b>
  
 
- <script>
-
-  function KeyDownFunction() {
-  document.getElementById("myText01").style.backgroundColor = "red";
-}
-  function KeyUpFunction() {
-  document.getElementById("myText01").style.backgroundColor = "green";
-}
- 
-function FocusFunction() {
- document.getElementById("myText01").style.backgroundColor = "yellow";
-}
-</script>
  
