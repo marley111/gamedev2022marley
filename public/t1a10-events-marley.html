@@ -4,7 +4,7 @@
  
  <link rel="stylesheet" href="mystyle.css">
  
-Version 0.2.5 <br>
+Version 0.2.6 <br>
  <title>Events</title>
  
  </head>
@@ -29,7 +29,7 @@ Events are HTML code that activates Javascript code
 
 Write your name: <input type=text id="myText02 value="">
  <br>
-Change the number: <input type=text id="myText01" value="3" onfocus="myFunction(this)"><br> 
+Change the number: <input type=text id="myText01" value="3" onfocus="goYellow(this)"><br> 
 
 <input type=button value="onClick" onClick="{ 
    document.getElementById('myDiv01').innerHTML = document.getElementById('myText01').value
@@ -50,7 +50,7 @@ Change the number: <input type=text id="myText01" value="3" onfocus="myFunction(
 }"> Go here </b>
  
 <script>
-function myFunction(x) {
+function goYellow(x) {
   x.style.background = "yellow";
 }
  
