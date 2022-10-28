@@ -4,7 +4,7 @@
  
  <link rel="stylesheet" href="mystyle.css">
  
-Version 0.3.8 <br>
+Version 0.3.9 <br>
  <title>Events</title>
  
  </head>
@@ -27,8 +27,7 @@ Events are HTML code that activates Javascript code
  <h4> Example working code</h4>
  
  <pre>
- 
- <script>
+
 
   function KeyDownFunction() {
   document.getElementById("myText01").style.backgroundColor = "red";
@@ -40,7 +39,7 @@ Events are HTML code that activates Javascript code
 function FocusFunction() {
  document.getElementById("myText01").style.backgroundColor = "yellow";
 }
-</script>
+
 </pre>
 
 <h4> Example working event</h4> 
@@ -66,5 +65,18 @@ Change the number: <input type=text id="myText01" value="3" onFocus="FocusFuncti
    document.getElementById('myB01').innerHTML = 'MouseOut'
 }"> Go here </b>
  
+ <script>
+
+  function KeyDownFunction() {
+  document.getElementById("myText01").style.backgroundColor = "red";
+}
+  function KeyUpFunction() {
+  document.getElementById("myText01").style.backgroundColor = "green";
+}
+ 
+function FocusFunction() {
+ document.getElementById("myText01").style.backgroundColor = "yellow";
+}
+</script>
 
  
