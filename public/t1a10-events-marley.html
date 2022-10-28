@@ -4,7 +4,7 @@
  
  <link rel="stylesheet" href="mystyle.css">
  
-Version 0.4.2 <br>
+Version 0.4.3 <br>
  <title>Events</title>
  
  </head>
@@ -45,11 +45,11 @@ function FocusFunction() {
 <h4> Example working event</h4> 
 
  
- <font color="red"><h3><u>Change the number:</u></h3></font> <input type=text id="myText01" value="3" onFocus="FocusFunction()" onKeyDown="KeyDownFunction()" onKeyUp="KeyUpFunction()"><br> 
+ <div class="wrapper"><font color="red"><h3><u>Change the number:</u></h3></font> <input type=text id="myText01" value="3" onFocus="FocusFunction()" onKeyDown="KeyDownFunction()" onKeyUp="KeyUpFunction()"><br> 
 
 <input type=button value="onClick" onClick="{ 
    document.getElementById('myDiv01').innerHTML = document.getElementById('myText01').value
-}"> 
+                                            }"> </div>
 
 <div id="myDiv01">...</div> 
 <br>
