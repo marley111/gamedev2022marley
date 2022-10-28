@@ -4,7 +4,7 @@
  
  <link rel="stylesheet" href="mystyle.css">
  
-Version 0.1.9 <br>
+Version 0.2.0 <br>
  <title>Events</title>
  
  </head>
@@ -27,7 +27,7 @@ Events are HTML code that activates Javascript code
 
 <h4> Example working event</h4> 
 
-Write your name: <input type=text id="myText02 value="" onblur="myFunction()">
+Write your name: <input type=text id="myText02 value="">
  <br>
 Change the number: <input type=text id="myText01" value="3" onfocus="myFunction(this)"><br> 
 
@@ -54,10 +54,6 @@ function myFunction(x) {
   x.style.background = "yellow";
 }
  
- function myFunction() {
-  var x = document.getElementById("fname");
-  x.value = x.value.toUpperCase();
-}
  
 </script>
  
