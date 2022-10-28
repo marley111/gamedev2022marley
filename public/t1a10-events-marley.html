@@ -4,7 +4,7 @@
  
  <link rel="stylesheet" href="mystyle.css">
  
-Version 0.3.4 <br>
+Version 0.3.5 <br>
  <title>Events</title>
  
  </head>
@@ -28,7 +28,7 @@ Events are HTML code that activates Javascript code
 <h4> Example working event</h4> 
 
  
-Change the number: <input type=text id="myText01" value="3" onfocus="onfocusFunction()" onkeydown="keydownFunction()" onkeyup="keyupFunction()"><br> 
+Change the number: <input type=text id="myText01" value="3" onkeydown="keydownFunction()" onkeyup="keyupFunction()"><br> 
 
 <input type=button value="onClick" onClick="{ 
    document.getElementById('myDiv01').innerHTML = document.getElementById('myText01').value
@@ -55,10 +55,6 @@ function onfocusFunction() {
 }
   function keydownFunction() {
   document.getElementById("demo").style.backgroundColor = "red";
-}
-
-function keyupFunction() {
-  document.getElementById("demo").style.backgroundColor = "green";
 }
  
 </script>
