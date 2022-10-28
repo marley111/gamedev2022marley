@@ -27,16 +27,6 @@ Events are HTML code that activates Javascript code
 
 <h4> Example working event</h4> 
 
-Write your name: <input type=text id="myText02" value="hi" onblur="myFunction()">
- <br>
- 
- <script>
- 
- function myFunction() {
-  var x = document.getElementById("fname");
-  x.value = x.value.toUpperCase();
-}
- </script>
  
 Change the number: <input type=text id="myText01" value="3" onfocus="goYellow(this)"><br> 
 
@@ -59,4 +49,10 @@ Change the number: <input type=text id="myText01" value="3" onfocus="goYellow(th
 }"> Go here </b>
  
 
+ <script>
+function goYellow(x) {
+  x.style.background = "yellow";
+}
+ 
+</script>
  
