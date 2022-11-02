@@ -6,7 +6,7 @@
 
     <title>Arrays</title>
 
-    <h4>Version 0.0.3</h4>
+    <h4>Version 0.0.4</h4>
 
   </head>
 
@@ -49,17 +49,28 @@
   
   <div id="myDiv01">...</div>
   
-  const dogs = ['chihuawa', 'lab', 'bulldog', 'terrier'];
-  
-  for (i=1; i<=3; i++){
-      if (i>2){
-  myAr[i]=3
-  }
-  }
-  
-  
+  <input type="text" id="myText02" value="3">
   <br>
-
+  <input type="button" value="Example onClick" onclick="{
+                                                        let myTemp = document.getElementById('myText02').value
+                                                        let mySum = ''
+                                                        document.getElementById('myDiv02').innerHTML = ''
+                                                        
+                                                        
+                                                        String [] dogs = {'chihuawa', 'lab', 'bulldog', 'terrier'};
+                                                        
+                                                        for (let myLoop=0; myLoop < myTemp; myLoop++){
+                                                          mySum += 'Loop #: ' + myLoop + ' array entry: ' + myArray [myLoop] +'<br>'
+                                                        }
+                                                        document.getElementById('myDiv02').innerHTML = mySum
+                                                        }">
+  <div id="myDiv02">...</div>
+                                                        
+  
+  
+  
+ 
+  
   </body>
 
 </html>
