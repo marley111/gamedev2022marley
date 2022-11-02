@@ -1,0 +1,52 @@
+
+let cars = [
+{
+  "color": "purple",
+  "type": "minivan",
+  "registration": new Date('2012-02-03'
+  "capacity": 7
+},
+{
+  "color": "red",
+  "type": "station wagon",
+  "registation": new Date('2018-03-03')
+  "capacity": 5
+},
+{
+"color": "black",
+  "type": "jeep",
+  "registation": new Date('2010-04-03')
+  "capacity": 5
+},
+{
+"color": "black",
+  "type": "pickup truck",
+  "registation": new Date('2005-03-03')
+  "capacity": 5
+}
+]
+
+let car = {
+  "color": "red",
+  "type": "volvo",
+  "registation": new Date('2002-12-02'),
+  "capacity": 5
+}
+cars.unshift(car);
+
+
+let car = {
+  "color": "green",
+  "type": "beetle",
+  "registation": new Date('2004-05-09'),
+  "capacity": 5
+}
+cars.push(car);
+
+let car = {
+  "color": "red",
+  "type": "cabrio",
+  "registration": new Date('2016-05-02'),
+  "capacity": 2
+}
+cars.splice(4, 0, car);
