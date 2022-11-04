@@ -8,7 +8,7 @@
       }
  </style>
 
-Version 0.1.1 <br>
+Version 0.1.2 <br>
  <title>Objects</title>
  
  </head>
@@ -38,9 +38,15 @@ Version 0.1.1 <br>
  Age: <input type=text id="myText03" value=""><br>
  Eye color: <input type=text id="myText04" value=""><br>
  
+<input type=button value="Personalized Greeting" onClick="{ 
+     let myPerson = {
+     'firstName' : 'document.getElementById('myText01').innerHTML'                                                     
+ }
+                                                          
+   document.getElementById('myDiv03').innerHTML = 'Hi ' + myPerson.firstName <br>                                                       
+}">
+<div id="myDiv03">...</div>
  
-
-
 <input type=button value="Example Object Set and Show" onClick="{
 
   let myPerson = {   
