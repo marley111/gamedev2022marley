@@ -79,6 +79,16 @@
             document.getElementById('myDiv02').innerHTML = myIn02 + ' is even'
          }
    }">
+          <input type=button value="Both in one calculator" onclick="{
+        let myIn02 = parseFloat(document.getElementById('myNum02').value)
+        if (myIn02 %2 == 1){
+            document.getElementById('myDiv02').innerHTML = myIn02 + ' is odd'
+      } else {
+      document.getElementById('myDiv01').innerHTML = myIn01 + ' is even'}
+         
+   }">
+          
+         
                  </div><br>
       <div class="wrapper" id="myDiv02">...</div>
      
