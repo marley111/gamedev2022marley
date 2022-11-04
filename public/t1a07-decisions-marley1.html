@@ -63,7 +63,7 @@
      
            
      
-       <div class="wrapper"><h3><strong>Example working code 2</strong></h3>
+       <div class="wrapper"><h3><strong>Even odd decisions</strong></h3>
        
        <input id="myNum02" type=number value="3"><br>
        
@@ -94,6 +94,19 @@
      
        <br><br>
        
-
+<div class="wrapper"><h3><strong>Score calculater (90 is good)</strong></h3>
+       
+       <input id="myNum03" type=number value="90"><br>
+       
+       <input type=button value="Score calculator" onclick="{
+        let myIn03 = parseFloat(document.getElementById('myNum03').value)
+        if (myIn03 >= 90){
+            document.getElementById('myDiv03').innerHTML = 'You scored ' + myIn03 + ' on the exam! Good job!'
+         } else {
+            document.getElementById('myDiv03').innerHTML = 'You scored ' + myIn03 + ' on the exam! Try harder next time.'}                                                
+   }">
+   
+   </div><br>
+      <div class="wrapper" id="myDiv03">...</div>
       </body>
     </html>
