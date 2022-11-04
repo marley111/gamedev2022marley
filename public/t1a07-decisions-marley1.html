@@ -65,12 +65,18 @@
      
        <div class="wrapper"><h3><strong>Example working code 2</strong></h3>
        
-       <input id="myNum02" type=number value="4"><br>
+       <input id="myNum02" type=number value="3"><br>
        
        <input type=button value="Odd calculator" onclick="{
         let myIn02 = parseFloat(document.getElementById('myNum02').value)
         if (myIn02 %2 == 1){
             document.getElementById('myDiv02').innerHTML = myIn02 + ' is odd'
+         }
+   }">
+          <input type=button value="Even calculator" onclick="{
+        let myIn02 = parseFloat(document.getElementById('myNum02').value)
+        if (myIn02 %2 == 0){
+            document.getElementById('myDiv02').innerHTML = myIn02 + ' is even'
          }
    }">
                  </div><br>
