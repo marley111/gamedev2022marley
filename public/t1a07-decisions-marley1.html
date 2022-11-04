@@ -6,7 +6,7 @@
    
   <title>Decisions</title>
   
-   <h4><font color="black">Version 0.0.7</font></h4>
+   <h4><font color="black">Version 0.0.8</font></h4>
   </head>
   <body background=
         "https://i.pinimg.com/564x/57/99/d6/5799d658b205497beea9e90fc9484e9a.jpg">
@@ -58,5 +58,18 @@
     }">
       </div><br>
       <div class="wrapper" id="myDiv01">...</div>
+       
+      <br><br> 
+       
+    <input id="myNum02" type=number value="3">
+       
+       <input type=button value="" onclick="{
+        let myIn02 = parseFloat(document.getElementById('myNum02').value)
+        if (myIn02 % 2 == 1){
+         document.getElementById('myDiv01').innerHTML = myIn02 + ' is odd'
+        }">  
+       </div><br>
+      <div class="wrapper" id="myDiv02">...</div>
+           
       </body>
     </html>
