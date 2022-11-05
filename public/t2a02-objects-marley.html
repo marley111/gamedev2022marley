@@ -8,7 +8,7 @@
       }
  </style>
 
-Version 0.1.3 <br>
+Version 0.1.4 <br>
  <title>Objects</title>
  
  </head>
@@ -33,16 +33,16 @@ Version 0.1.3 <br>
  <h3>Example working Objects code</h4>
  
  Write your: <br>
- First name: <input type=text id="myText01" value=""><br>
- Last name: <input type=text id="myText02" value=""><br>
- Age: <input type=text id="myText03" value=""><br>
- Eye color: <input type=text id="myText04" value=""><br>
+ First name: <input type=text id="firstname" value=""><br>
+ Last name: <input type=text id="lastname" value=""><br>
+ Age: <input type=text id="age" value=""><br>
+ Eye color: <input type=text id="eyecolor" value=""><br>
  
 <input type=button value="Personalized Greeting" onClick="{ 
                                                           
    let myPerson = {                                                  
-     'firstName' :  'document.getElementById('myText01').innerHTML'
-     'lastName' : 'document.getElementById('myText02').innerHTML'
+     'firstName' :  'document.getElementById('firstname').innerHTML'
+     'lastName' : 'document.getElementById('lastname').innerHTML'
  }
 
    document.getElementById('myDiv03').innerHTML = 'Hi ' + myPerson.firstName +  myPerson.lastName <br>                                                       
