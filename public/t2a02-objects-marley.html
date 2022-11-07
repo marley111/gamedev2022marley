@@ -8,8 +8,19 @@
       }
  </style>
 
-Version 0.2.5 <br>
+Version 0.2.6 <br>
  <title>Objects</title>
+ 
+ <script>
+  
+    let myPerson = {   
+    'firstName' : 'John',
+    'lastName'  : 'Doe',
+    'age'  : '50',
+    'eyeColor'  : 'blue'
+  }
+    
+ </script>
  
  </head>
  
@@ -55,12 +66,6 @@ Version 0.2.5 <br>
  
 <input type=button value="Example Object Set and Show" onClick="{
 
-  let myPerson = {   
-    'firstName' : 'John',
-    'lastName'  : 'Doe',
-    'age'  : '50',
-    'eyeColor'  : 'blue'
-  }
 
    document.getElementById('myDiv01').innerHTML = '<br>myPerson Object has properties: <br>'
    document.getElementById('myDiv01').innerHTML += 'First name: ' + myPerson.firstName + '<br>'
@@ -76,12 +81,7 @@ Version 0.2.5 <br>
  
  <input type=button value="click me" onClick="{
                                               
-  let myPerson = {   
-    'firstName' : 'Bob',
-    'lastName'  : 'Smith',
-    'age'       :  45,
-    'eyeColor'  : 'green'
-  }
+  
         document.getElementById('myDiv02').innerHTML = '<br>Hi ' + myPerson.firstName + ' ' +  myPerson.lastName + '! I like your ' + myPerson.eyeColor + ' eyes! You are ' + myPerson.age + ' years old?'
  
         }">
