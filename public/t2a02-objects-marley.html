@@ -8,7 +8,7 @@
       }
  </style>
 
-Version 0.1.8 <br>
+Version 0.1.9 <br>
  <title>Objects</title>
  
  </head>
@@ -34,19 +34,22 @@ Version 0.1.8 <br>
  
  Write your: <br>
  First name: <input type=text id="myText01" value=""><br>
+ Last name: <input type=text id="myText02" value=""><br>
 
  
 <input type=button value="Personalized Greeting" onClick="{ 
   
    
-  let myName = document.getElementById('myText01').value
+  let myFirstName = document.getElementById('myText01').value
+  let myLastName = document.getElementById('myText02').value
                                                           
                                                           
    let myPerson = {                                                  
-     'firstName' : myName
+     'firstName' : myFirstName
+     'lastName' : myLastName                                                     
  }
 
-   document.getElementById('myDiv03').innerHTML = 'Hi ' + myPerson.firstName <br>                                                       
+   document.getElementById('myDiv03').innerHTML = 'Hi ' + myPerson.firstName + myPerson.lastName <br>                                                       
    
 }">
 
