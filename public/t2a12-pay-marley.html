@@ -24,7 +24,7 @@
   <br>
   <input type=button value="Calculate" onClick="{
                                                 
-                                              
+    let myTax = document.getElementById('TaxID').value                                            
     
                                                 
                                                function multiplyBy()
@@ -34,19 +34,9 @@
                                                 let mySalary = myPay * myHours
                                                 }
                                                 
-                                                function divideBy()
-                                                {
-                                                myPay = document.getElementById('SalaryID').value
-                                                myHours = document.getElementById('HoursID').value
-                                                myTax = document.getElementById('TaxID').value  
-                                                let myTax1 = myTax / 100
-                                                let myTax2 = mySalary * myTax1
-                                                }
-                                                
-                                                
                                                 
  document.getElementById('myDiv01').innerHTML = '<br>My Salary: ' + mySalary + '<br>'
-
+                                               
                                                 
                                                                                         
                       
@@ -55,7 +45,6 @@
   <br>
   
     <div id="myDiv01">...</div>
-  
 
   
   
