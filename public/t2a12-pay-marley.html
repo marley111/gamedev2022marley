@@ -2,7 +2,7 @@
 <html>
   <head>
     
-    <h4>Version 0.0.0</h4>
+    <h4>Version 0.0.1</h4>
     
     <title>Pay</title>
     
@@ -22,9 +22,16 @@
   Tax Bracket: <input type=text id="TaxID" value="30">%<br>
   <br>
   <br>
-  <input type=button value="Calculate" onclick
+  <input type=button value="Calculate" onClick="{
+                                                
+    let mySalary = document.getElementById('SalaryID').value
+    let myHours = document.getElementById('HoursID').value
+    let myTax = document.getElementById('TaxID').value                                            
+ 
+                                                
+ document.getElementById('myDiv01').innerHTML = '<br>My Salary: ' + mySalary * myHours + <br>'                                               
                       
-  
+  }">
   
   
   
