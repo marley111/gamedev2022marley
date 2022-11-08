@@ -2,7 +2,7 @@
 <html>
   <head>
     
-    <h4>Version 0.0.9</h4>
+    <h4>Version 0.0.8</h4>
     
     <title>Pay</title>
     
@@ -15,7 +15,7 @@
   
   <hr>
   
-  Salary/Hour: <input type=text id="SalaryID" value="$15.00"><br>
+  Salary/Hour: $<input type=text id="SalaryID" value="15.00"><br>
   <br>
   Hours Worked: <input type=text id="HoursID" value="8"><br>
   <br>
@@ -27,7 +27,7 @@
     let myPay = document.getElementById('SalaryID').value
     let myHours = document.getElementById('HoursID').value
     let myTax = document.getElementById('TaxID').value                                            
-    let mySalary = 'myPay * myHours'
+    let mySalary = myPay * myHours
                                                 
  document.getElementById('myDiv01').innerHTML = '<br>My Salary: ' + mySalary + '<br>'
                                                
