@@ -2,7 +2,7 @@
 <html>
   <head>
     
-    <h4>Version 0.0.8</h4>
+    <h4>Version 0.0.9</h4>
     
     <title>Pay</title>
     
@@ -24,10 +24,16 @@
   <br>
   <input type=button value="Calculate" onClick="{
                                                 
-    let myPay = document.getElementById('SalaryID').value
-    let myHours = document.getElementById('HoursID').value
     let myTax = document.getElementById('TaxID').value                                            
-    let mySalary = myPay * myHours
+    
+                                                
+                                               function multiplyBy()
+                                                {
+                                                myPay = document.getElementById('SalaryID').value
+                                                myHours = document.getElementById('HoursID').value
+                                                let mySalary = myPay * myHours
+                                                }
+                                                
                                                 
  document.getElementById('myDiv01').innerHTML = '<br>My Salary: ' + mySalary + '<br>'
                                                
