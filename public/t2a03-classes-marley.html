@@ -6,7 +6,7 @@
     
     <title>Classes</title>
 
-    <h4>Version 0.0.2</h4>
+    <h4>Version 0.0.3</h4>
 
   </head>
 
@@ -32,7 +32,29 @@
       </pre>
     
     <h3> Example working Classes code</h3>
-Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
+Type your name: <input type=text id="myText01" value=""><br>
+
+<input type=button value="Click For Greeting" onClick="{
+ class myPerson {
+    constructor(passName, passAge) {
+       this.myName = passName;
+       this.myAge = passAge;
+    }
+    myShow(){    
+       document.getElementById('myDiv02').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
+    }
+ }  // end class myPerson
+   myGuy = new myPerson(document.getElementById('myText01').value, 5)
+   myGuy.myShow()  
+
+}">
+
+<div id="myDiv02">...</div>
+
+<br><br>
+
+
+
 <input type=button value="Example Class Set and Show Class Animal" onClick="{
  class myAnimal {
     constructor(passName, passAge) {
