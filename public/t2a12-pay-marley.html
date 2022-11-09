@@ -2,7 +2,7 @@
 <html>
   <head>
     
-    <h4>Version 0.1.9</h4>
+    <h4>Version 0.2.0</h4>
     
     <title>Pay</title>
     
@@ -30,9 +30,10 @@
     let mySalary = myPay * myHours
     let myTax = mySalary * myTaxPercent /  100                                           
     let myTakeHome = mySalary - myTax
+    let myMonthly = mySalary * 20
+    let myMonthlyTakeHome = myTakeHome * 21.4285714286                                            
                                                 
-                                                
- document.getElementById('myDiv01').innerHTML = '<br>My Salary Before Tax: ' + mySalary + '<br>' + 'My Salary After Tax: ' + myTakeHome + '<br>'
+ document.getElementById('myDiv01').innerHTML = '<br>My Salary Before Tax: ' + mySalary + '<br>' + 'My Salary After Tax: ' + myTakeHome + '<br><br>' + 'My Monthly Salary: ' + myMonthly + '<br>' + 'My Monthly After Tax: ' + myMonthlyAfterTax + '<br>'
                                                 
                                                
                                                 
