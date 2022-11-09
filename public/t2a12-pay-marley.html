@@ -24,15 +24,11 @@
   <br>
   <input type=button value="Calculate" onClick="{
                                                 
-    let myTax = document.getElementById('TaxID').value                                            
-    
-                                                
-                                               function multiplyBy(){
-                                                
-                                                myPay = document.getElementById('SalaryID').value
-                                                myHours = document.getElementById('HoursID').value
-                                                let mySalary = document.getElementById('SalaryID').value * document.getElementById('HoursID').value
-                                                }
+    let myTax = document.getElementById('TaxID').value                                                                                        
+    myPay = document.getElementById('SalaryID').value
+    myHours = document.getElementById('HoursID').value
+    let mySalary = myPay * myHours
+
                                                 
                                                 
  document.getElementById('myDiv01').innerHTML = '<br>My Salary: ' + mySalary + '<br>'
