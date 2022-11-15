@@ -2,7 +2,7 @@
 <html>
 <head>
 
-  <h4>Version 0.0.3</h4>
+  <h4>Version 0.0.4</h4>
   <title>Spy</title>
   
 </head>
@@ -45,7 +45,8 @@
          if (myString[myLoop] == 'x') {myTemp = 'y'}
          if (myString[myLoop] == 'y') {myTemp = 'z'}
          if (myString[myLoop] == 'z') {myTemp = 'a'}
-         if (myString[myLoop] == ' ') {myTemp = '9'}                                     
+         if (myString[myLoop] == ' ') {myTemp = '9'}
+         if (myString[myLoop] == ''') {myTemp = '2'}
          myString[myLoop] = myTemp
       }
       document.getElementById('myArea02').value = myString.join('')
@@ -85,7 +86,8 @@
          if (myString[myLoop] == 'x') {myTemp = 'v'}
          if (myString[myLoop] == 'y') {myTemp = 'x'}
          if (myString[myLoop] == 'z') {myTemp = 'y'}
-         if (myString[myLoop] == '9') {myTemp = ' '}                                     
+         if (myString[myLoop] == '9') {myTemp = ' '}
+         if (myString[myLoop] == '2') {myTemp = '''}                                     
          myString[myLoop] = myTemp
       }
       document.getElementById('myArea03').value = myString.join('')
