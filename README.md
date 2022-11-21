@@ -17,5 +17,6 @@ https://marley111.github.io/gamedev2022marley/public/
 goodguy ![image](https://user-images.githubusercontent.com/113542165/202561629-18cb8ac3-a989-4d2a-bf82-803c497ab036.png)
 bad guy ![image](https://user-images.githubusercontent.com/113542165/202808604-92bf3e63-a099-45ab-8b31-8ce2480f3afa.png)
 background ![image](https://user-images.githubusercontent.com/113542165/202809976-0248af72-f426-498a-951c-f67c33908a61.png)
+background 2![image](https://user-images.githubusercontent.com/113542165/203166111-0f241e60-f285-4bda-a952-e824a5fb5a6a.png)
 
 
