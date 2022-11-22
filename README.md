@@ -22,3 +22,4 @@ background 2![image](https://user-images.githubusercontent.com/113542165/2031661
 
 back guy 2 ![image](https://user-images.githubusercontent.com/113542165/203414738-9a798c21-2795-4c38-b22e-44189fd03cba.png)
 good guy2 ![image](https://user-images.githubusercontent.com/113542165/203415523-437c0d09-cc36-4b2f-94be-014a3e3e7dad.png)
+good guy move ![image](https://user-images.githubusercontent.com/113542165/203416903-ab9bf0c7-41e9-482e-987f-1961a062bcc4.png)
