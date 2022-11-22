@@ -20,3 +20,4 @@ background ![image](https://user-images.githubusercontent.com/113542165/20280997
 background 2![image](https://user-images.githubusercontent.com/113542165/203166111-0f241e60-f285-4bda-a952-e824a5fb5a6a.png)
 
 
+back guy 2 ![image](https://user-images.githubusercontent.com/113542165/203414738-9a798c21-2795-4c38-b22e-44189fd03cba.png)
