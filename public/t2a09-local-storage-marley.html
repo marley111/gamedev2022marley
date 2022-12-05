@@ -1,4 +1,4 @@
-Version 0.0.2
+Version 0.0.3
 
 <h2>t2a09-local-storage-name by Fred. Instructions:</h2>
 
@@ -30,7 +30,7 @@ Text example: <input id="myText1" type=text size=70 value="" placeholder="Write 
 <input type=button value="Click For Greeting" onClick="{
                                                        
       
-  let myFirstName = document.getElementById('myText1').value
+  let myFirstName = localStorage.getItem('myStoredText')
   
                                                           
    document.getElementById('myDiv03').innerHTML = '<br>Hi, ' + myFirstName + '.<br>'                                                      
