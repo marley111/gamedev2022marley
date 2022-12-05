@@ -22,3 +22,23 @@ Text example: <input id="myText1" type=text size=70 value="" placeholder="Write 
 <input type="button" value="Retrieve Text" onClick="{
    document.getElementById('myText1').value = localStorage.getItem('myStoredText')
 }"> 
+
+   
+   
+<input type=button value="Click For Greeting" onClick="{
+                                                       
+    class myPerson {
+    constructor(passName, passAge) {
+       this.myName = passName;
+       this.myAge = passAge;
+    }
+    myShow(){    
+       document.getElementById('myDiv02').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
+    }
+ }  // end class myPerson
+   myGuy = new myPerson(document.getElementById('myText1').value, document.getElementById('myText02').value)
+   myGuy.myShow()  
+}">
+   
+   <div id="myDiv02">...</div>
+   
