@@ -1,3 +1,5 @@
+Version 0.0.1
+
 <h2>t2a09-local-storage-name by Fred. Instructions:</h2>
 
 <body onload="{
@@ -27,18 +29,13 @@ Text example: <input id="myText1" type=text size=70 value="" placeholder="Write 
    
 <input type=button value="Click For Greeting" onClick="{
                                                        
-         class myPerson {
-         constructor(passName, passAge) {
-           this.myName = passName;
-                                                  
-         }                                              
-         myShow(){
-            document.getElementById('myDiv1').innerHTML = 'Hello '+ this.myName + '. + '<br>'
-         }                                              
-     } // end class myPerson                                                  
-       myGuy = new myPerson(document.getElementById('myText1').value)
-       myGuy.myShow()
-  }">                                                    
+      
+  let myFirstName = document.getElementById('myText1').value
+  
+                                                          
+   document.getElementById('myDiv03').innerHTML = '<br>Hi, ' + myFirstName + ' ' + myLastName + '.<br>'                                                      
    
-   <div id="myDiv1">...</div>
+}">
+
+<div id="myDiv03">...</div>
    
