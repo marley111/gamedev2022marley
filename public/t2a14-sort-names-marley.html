@@ -1,7 +1,7 @@
 <html>
 <head>
 
-<h4>Version 0.0.2</h4>
+<h4>Version 0.0.3/h4>
 
 <title>Sort</title>
 
@@ -36,8 +36,10 @@
   let myTemp = 0
                                     
   for (let myLoop = 0;   myLoop < myMax;  myLoop++){
-     if(comparison > myCards[myLoop]){
-               comparison = myCards[myLoop]; 
+     if(myCards[0] > myCards[1]){
+       let myTemp = myCards[0]
+       let myCards[0] = myCards[1]
+       myCards[1] = myTemp        
     }                                     
 
 }">
