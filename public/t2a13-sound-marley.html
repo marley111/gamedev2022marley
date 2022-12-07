@@ -9,7 +9,20 @@
  </head>
  <body>
 
-<script> let mySound1 = new Audio('public_Yeh.m4a') </script>
+  <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+
+  
+<script>
+ 
+ let mySound1 = new Audio('public_Yeh.m4a')
+  
+  function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,fr,de,ru', layout:google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+
+    }
+ 
+  </script>
  
 
 
@@ -20,6 +33,16 @@
 <input type=button value=sound onClick="{
     mySound1.play()
 }">
+ 
+ 
+<div id="google_translate_element">I really like javascript</div>
+
+
+<input  type="button" value="initilize Russian" onclick="{  
+   let myVoice = 'Russian Female'
+   responsiveVoice.speak(document.getElementById('google_translate_element').innerText, myVoice, {pitch: 1, rate: 1, volume : 1})                                              
+}"><br><br>
+
 
  </body>
 </html>
