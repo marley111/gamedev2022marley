@@ -20,11 +20,12 @@
   for ( let myLoop = 0;   myLoop < myMax;  myLoop++){
      myCards[myLoop] = Math.floor(Math.random()*10)
   }
+   document.getElementById('myShow').click();                                            
 }">
    
 <br>
    
-<input type=button value="Show" onclick="{
+<input type=button value="Show" id="myShow" onclick="{
   let myTemp = ''
   for ( let myLoop = 0;   myLoop < myMax;  myLoop++){
      myTemp += myLoop + ' = '+ myCards[myLoop] + '<br>'
@@ -43,7 +44,8 @@
        myCards[1] = myTemp        
                                       
    }
- }                                        
+ } 
+ document.getElementById('myShow').click();    
 }">
 
 <div id="myDiv01"></div>
