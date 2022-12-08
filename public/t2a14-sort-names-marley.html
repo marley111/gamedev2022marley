@@ -39,8 +39,8 @@
   for (let myLoop = 0; myLoop < myMax; myLoop++){
                                         
      if( myCards[0] > myCards[1] ){
-       let myTemp = myCards[0]
-       let myCards[0] = myCards[1]
+       myTemp = myCards[0]
+       myCards[0] = myCards[1]
        myCards[1] = myTemp        
                                       
    }
@@ -54,10 +54,11 @@
                                         
      if( myCards[0] > myCards[1] ){
        let myTemp = myCards[0]
-       let myCards[0] = myCards[1]
+       myCards[0] = myCards[1]
        myCards[1] = myTemp        
+    }
   }
-   document.getElementById('myShow').click();                                            
+  document.getElementById('myShow').click();                                            
 }">
    
    
