@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
    
-   <h4> Version 0.1.5 </h4>
+   <h4> Version 0.1.6 </h4>
    <title>Game Template</title>
       
 </head>
@@ -56,7 +56,7 @@ function myCheckHit(){
 
 </script>
 
-<img id="myImg01" style="position:absolute; width: 160px; height:230px; top:250px; left:50px;"  src="bird (1).gif">
+<img id="myImg01" style="position:absolute; width: 100px; height:160px; top:250px; left:50px;"  src="bird (1).gif">
 <img id="myImg02" style="position:absolute; width: 180px; height:200px; top:100px; left: 500px;" src="cloud 1 (1).gif">
 <img id="myImg03" style="position:absolute; width: 195px; height:360px; top:450px; left: 800px;" src="new tree.gif">
 
@@ -81,12 +81,12 @@ function myCheckHit(){
 
 
 <input type=button value="Image Right Fast Button" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
-  document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
+  document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 15 + 'px'
   myCheckHit()     // checks for all collisions
 }"><br><br>
    
 <input type=button value="Image Down Fast Button" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
-  document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 10 + 'px'
+  document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 15 + 'px'
   myCheckHit()     // checks for all collisions
 }"><br><br>
 
