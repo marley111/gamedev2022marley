@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
    
-   <h4> Version 0.2.0 </h4>
+   <h4> Version 0.2.1 </h4>
    <title>Game Template</title>
       
 </head>
@@ -85,7 +85,7 @@ function myCheckHit(){
   myClock = setInterval(function(){
       myGlobalX -= 10
       myTemp =  myGlobalX + 'px 0px'
-      document.getElementById('myImg02','myImg03').style.backgroundPosition = myTemp
+      document.getElementById('myImg02','myImg03').style.position = myTemp
   }, 100)
     
 }">
@@ -95,12 +95,12 @@ function myCheckHit(){
 <input type=button value="Image Right Fast Button" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
   document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 15 + 'px'
   myCheckHit()     // checks for all collisions
-}"><br><br>
+}">
    
 <input type=button value="Image Down Fast Button" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
   document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 15 + 'px'
   myCheckHit()     // checks for all collisions
-}"><br><br>
+}">
 
 <input type=button value="Image Up Fast Button" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
   document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + -15 + 'px'
