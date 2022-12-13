@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
    
-   <h4> Version 0.1.8 </h4>
+   <h4> Version 0.1.9 </h4>
    <title>Game Template</title>
       
 </head>
@@ -91,7 +91,7 @@ function myCheckHit(){
 }"><br><br>
 
 <input type=button value="Image Up Fast Button" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
-  document.getElementById('myImg01').style.bottom = parseInt(document.getElementById('myImg01').style.bottom) + 15 + 'px'
+  document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + -15 + 'px'
   myCheckHit()     // checks for all collisions
 }"><br><br>
 
