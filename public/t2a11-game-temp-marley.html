@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
    
-   <h4> Version 0.1.0 </h4>
+   <h4> Version 0.1.1 </h4>
    <title>Game Template</title>
       
 </head>
@@ -40,7 +40,7 @@ function myHitOther(my1,my2){
 
 
 function myCheckHit(){
-   if ( myHitOther('myImg01','myImg02') ){
+   if ( myHitOther('myImg01','myImg02', 'myImg03') ){
        alert('you lose')  
        document.getElementById('myImg01').style.left = '20px'
        location = 't2a13-keydown.html'  // go to your next level
@@ -57,8 +57,8 @@ function myCheckHit(){
 </script>
 
 <img id="myImg01" style="position:absolute; width: 160px; height:230px; top:250px; left:50px;"  src="bird.gif">
-<img id="myImg02" style="position:absolute; width: 180px; height:240px; top:250px; left: 500px;" src="cloud 1.gif">
-
+<img id="myImg02" style="position:absolute; width: 180px; height:240px; top:100px; left: 500px;" src="cloud 1.gif">
+<img id="myImg03" style="position absolute; width: 195px; height:360px; top: 500; left: 600px;" src="new tree.gif">
 
 <input id="myButton01" type=button value="background move left" onclick="{
   myTemp = '100px 0px'
