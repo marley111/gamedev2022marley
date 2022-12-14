@@ -121,7 +121,7 @@ function myCheckHit(){
 }">
    
    <input type=button value="Obsticals move" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
-  clearInterval(myClock2)
+  clearInterval(myClock3)
   myClock3 = setInterval(function(){
      document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) + -5 + 'px'
      myCheckHit()     // checks for all collisions
