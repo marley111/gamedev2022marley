@@ -17,6 +17,7 @@
    let myGlobalX = 0
    let myClock
    let myClock2
+   let myClock3
 
 
    // global functions here
@@ -121,7 +122,7 @@ function myCheckHit(){
    
    <input type=button value="Obsticals move" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
   clearInterval(myClock2)
-  myClock2 = setInterval(function(){
+  myClock3 = setInterval(function(){
      document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) + -5 + 'px'
      myCheckHit()     // checks for all collisions
    }, 100)
