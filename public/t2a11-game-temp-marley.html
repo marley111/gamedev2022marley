@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
    
-   <h4> Version 0.3.9 </h4>
+   <h4> Version 0.4.0 </h4>
    <title>Game Template</title>
       
 </head>
@@ -69,7 +69,7 @@ function myCheckHit(){
 
 <img id="myImg01" style="position:absolute; width: 100px; height:120px; top:250px; left:50px;"  src="bird (1).gif">
 <img id="myImg02" style="position:absolute; width: 180px; height:200px; top:120px; left: 500px;" src="cloud 1 (1).gif">
-<img id="myImg03" style="position:absolute; width: 230px; height:450px; top:375px; left: 1000px;" src="new tree (1).gif">
+<img id="myImg03" style="position:absolute; width: 230px; height:450px; top:365px; left: 1000px;" src="new tree (1).gif">
  
 
 <input id="myButton01" type=button value="background move left" onclick="{
@@ -117,8 +117,15 @@ function myCheckHit(){
      document.getElementById('myImg03').style.left = parseInt(document.getElementById('myImg03').style.left) + -5 + 'px'
      myCheckHit()     // checks for all collisions
    }, 100)
+}">
+   
+   <input type=button value="Obsticals move" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+  clearInterval(myClock2)
+  myClock2 = setInterval(function(){
+     document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) + -5 + 'px'
+     myCheckHit()     // checks for all collisions
+   }, 100)
 }"><br><br>
-
 
 
    </body>
