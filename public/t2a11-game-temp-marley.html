@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
    
-   <h4> Version 0.4.7 </h4>
+   <h4> Version 0.4.9 </h4>
    <title>Game Template</title>
       
 </head>
@@ -50,12 +50,12 @@ function myCheckHit(){
    if ( myHitOther('myImg01','myImg03') ){
        alert('you lose')  
        document.getElementById('myImg01').style.left = '20px'
-       location = 't2a13-keydown.html'  // go to your next level
+       location = 't2a11-game-temp-marley.html'  // go to your next level
    }
      if ( myHitOther('myImg01', 'myImg04') ){
        alert('you lose')  
        document.getElementById('myImg01').style.left = '20px'
-       location = 't2a13-keydown.html'  // go to your next level
+       location = 't2a11-game-temp-marley.html'  // go to your next level
    }
 
 
@@ -100,7 +100,8 @@ clearInterval(myClock3)
 
 
 
-<input type=button value="↑" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+<center>
+   <input type=button value="↑" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
   document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + -15 + 'px'
   myCheckHit()     // checks for all collisions
 }"><br>
@@ -117,7 +118,7 @@ clearInterval(myClock3)
 }">
 
 
-   
+   </center>
    
 
  
