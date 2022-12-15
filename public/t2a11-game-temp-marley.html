@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
    
-   <h4> Version 0.4.9 </h4>
+   <h4> Version 0.5.0 </h4>
    <title>Game Template</title>
       
 </head>
@@ -102,18 +102,18 @@ clearInterval(myClock3)
 
 <center>
    <input type=button value="↑" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
-  document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + -15 + 'px'
+  document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + -20 + 'px'
   myCheckHit()     // checks for all collisions
 }"><br>
    
 <input type=button value="→" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
-  document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 15 + 'px'
+  document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 20 + 'px'
   myCheckHit()     // checks for all collisions
 }"><br>
    
    
 <input type=button value="↓" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
-  document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 15 + 'px'
+  document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 20 + 'px'
   myCheckHit()     // checks for all collisions
 }">
 
