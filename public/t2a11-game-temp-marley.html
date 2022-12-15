@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
    
-   <h4> Version 0.4.1 </h4>
+   <h4> Version 0.4.2 </h4>
    <title>Game Template</title>
       
 </head>
@@ -73,12 +73,6 @@ function myCheckHit(){
 <img id="myImg03" style="position:absolute; width: 230px; height:450px; top:365px; left: 1000px;" src="new tree (1).gif">
  
 
-<input id="myButton01" type=button value="background move left" onclick="{
-  myTemp = '100px 0px'
-  myGlobalX -= 5
-  myTemp =  myGlobalX + 'px 0px'
-  document.getElementById('myBody').style.backgroundPosition =myTemp
-}">
 
 
 
@@ -86,7 +80,7 @@ function myCheckHit(){
   clearInterval(myClock)
   let myTemp = '100px 0px'
   myClock = setInterval(function(){
-      myGlobalX -= 5
+      myGlobalX -= 3
       myTemp =  myGlobalX + 'px 0px'
       document.getElementById('myBody').style.backgroundPosition = myTemp
   }, 100)
@@ -115,12 +109,12 @@ function myCheckHit(){
 <input type=button value="Obsticals move" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
   clearInterval(myClock2)
   myClock2 = setInterval(function(){
-     document.getElementById('myImg03').style.left = parseInt(document.getElementById('myImg03').style.left) + -5 + 'px'
+     document.getElementById('myImg03').style.left = parseInt(document.getElementById('myImg03').style.left) + -8 + 'px'
      myCheckHit()     // checks for all collisions
    }, 100)
 clearInterval(myClock3)
   myClock3 = setInterval(function(){
-     document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) + -5 + 'px'
+     document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) + -8 + 'px'
      myCheckHit()     // checks for all collisions
    }, 100)
 }"><br><br>
