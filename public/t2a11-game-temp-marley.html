@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
    
-   <h4> Version 0.4.4 </h4>
+   <h4> Version 0.4.6 </h4>
    <title>Game Template</title>
       
 </head>
@@ -80,7 +80,7 @@ function myCheckHit(){
   clearInterval(myClock)
   let myTemp = '100px 0px'
   myClock = setInterval(function(){
-      myGlobalX -= 3
+      myGlobalX -= 10
       myTemp =  myGlobalX + 'px 0px'
       document.getElementById('myBody').style.backgroundPosition = myTemp
   }, 100)
@@ -88,34 +88,41 @@ function myCheckHit(){
                                          
   clearInterval(myClock2)
   myClock2 = setInterval(function(){
-     document.getElementById('myImg03').style.left = parseInt(document.getElementById('myImg03').style.left) + -8 + 'px'
+     document.getElementById('myImg03').style.left = parseInt(document.getElementById('myImg03').style.left) + -15 + 'px'
      myCheckHit()     // checks for all collisions
    }, 100)
 clearInterval(myClock3)
   myClock3 = setInterval(function(){
-     document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) + -8 + 'px'
+     document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) + -15 + 'px'
      myCheckHit()     // checks for all collisions
    }, 100)
 }"><br><br>
 
 
 
+<input type=button value="↑" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+  document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + -15 + 'px'
+  myCheckHit()     // checks for all collisions
+}"><br>
 
-
+   
+<input type=button value="←" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+  document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + - 15 + 'px'
+  myCheckHit()     // checks for all collisions
+}">
+   
 <input type=button value="→" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
   document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 15 + 'px'
   myCheckHit()     // checks for all collisions
-}">
+}"><br>
+   
    
 <input type=button value="↓" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
   document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 15 + 'px'
   myCheckHit()     // checks for all collisions
 }">
 
-<input type=button value="↑" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
-  document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + -15 + 'px'
-  myCheckHit()     // checks for all collisions
-}"><br><br>
+
    
    
 
