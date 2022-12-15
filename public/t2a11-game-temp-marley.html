@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
    
-   <h4> Version 0.5.1 </h4>
+   <h4> Version 0.5.2 </h4>
    <title>Game Template</title>
       
 </head>
@@ -45,9 +45,7 @@ function myCheckHit(){
        document.getElementById('myImg01').style.left = '20px'
        location = 't2a11-game-temp-marley.html'  // go to your next level
    }  
-   
-   
-   if ( myHitOther('myImg01','myImg03') ){
+      if ( myHitOther('myImg01','myImg03') ){
        alert('you lose')  
        document.getElementById('myImg01').style.left = '20px'
        location = 't2a11-game-temp-marley.html'  // go to your next level
@@ -57,7 +55,9 @@ function myCheckHit(){
        document.getElementById('myImg01').style.left = '20px'
        location = 't2a11-game-temp-marley.html'  // go to your next level
    }
-
+if ( myHitOther('myImg02','myImg03').location = < '0px'){
+   location = '1500px'
+}
 
    // more if statements here like the above
 
@@ -84,8 +84,7 @@ function myCheckHit(){
       myTemp =  myGlobalX + 'px 0px'
       document.getElementById('myBody').style.backgroundPosition = myTemp
   }, 100)
-    
-                                         
+                                        
   clearInterval(myClock2)
   myClock2 = setInterval(function(){
      document.getElementById('myImg03').style.left = parseInt(document.getElementById('myImg03').style.left) + -8 + 'px'
