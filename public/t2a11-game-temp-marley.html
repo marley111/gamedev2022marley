@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
    
-   <h4> Version 0.4.0 </h4>
+   <h4> Version 0.4.1 </h4>
    <title>Game Template</title>
       
 </head>
@@ -118,15 +118,14 @@ function myCheckHit(){
      document.getElementById('myImg03').style.left = parseInt(document.getElementById('myImg03').style.left) + -5 + 'px'
      myCheckHit()     // checks for all collisions
    }, 100)
-}">
-   
-   <input type=button value="Obsticals move" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
-  clearInterval(myClock3)
+clearInterval(myClock3)
   myClock3 = setInterval(function(){
      document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) + -5 + 'px'
      myCheckHit()     // checks for all collisions
    }, 100)
 }"><br><br>
+   
+ 
 
 
    </body>
