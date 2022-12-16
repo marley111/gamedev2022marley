@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<head>
+   
+   <h4> Version 0.5.8 </h4>
+   <title>Game Template</title>
+      
+</head>
+
+
+<body id="myBody" style="background-repeat:repeat; background-size: 100%" background="background1.gif" no-repeat center center fixed;>
+
+
+
+<script>
+
+   // global variables here
+   let myGlobalX = 0
+   let myClock
+   let myClock2
+   let myClock3
+   let myClock4
+
+
+   // global functions here
+function myHitOther(my1,my2){
+   left1   = parseInt(document.getElementById(my1).style.left)
+   right1  = left1 + parseInt(document.getElementById(my1).style.width)
+   top1    = parseInt(document.getElementById(my1).style.top)   
+   bottom1 = top1   + parseInt(document.getElementById(my1).style.height)
+   left2   = parseInt(document.getElementById(my2).style.left)
+   right2  = left2 + parseInt(document.getElementById(my2).style.width)
+   top2    = parseInt(document.getElementById(my2).style.top)   
+   bottom2 = top2   + parseInt(document.getElementById(my2).style.height)
+   if ((right1  >=  left2  ) &&      	   
+       (bottom1 >=  top2   ) &&
+       (left1   <=  right2 ) &&
+       (top1    <=  bottom2) ){
+       return true
+   }
+}
+
+
+function myCheckHit(){
+   if ( myHitOther('myImg01','myImg02') ){
+       alert('you lose')  
+       document.getElementById('myImg01').style.left = '20px'
+       location = 't2a11-game-temp-marley.html'  // go to your next level
+   }  
+      if ( myHitOther('myImg01','myImg03') ){
+       alert('you lose')  
+       document.getElementById('myImg01').style.left = '20px'
+       location = 't2a11-game-temp-marley.html'  // go to your next level
+   }
+     if ( myHitOther('myImg01', 'myImg04') ){
+       alert('you lose')  
+       document.getElementById('myImg01').style.left = '20px'
+       location = 't2a11-game-temp-marley.html'  // go to your next level
+   }
+
+   // more if statements here like the above
+
+
+
+}  // end of myCheckHit()
+
+
+</script>
+
+<img id="myImg01" style="position:absolute; width: 100px; height:120px; top:250px; left:50px;"  src="bird (1).gif">
+<img id="myImg02" style="position:absolute; width: 180px; height:180px; top:120px; left: 500px;" src="cloud 1 (1).gif">
+<img id="myImg03" style="position:absolute; width: 230px; height:450px; top:365px; left: 1000px;" src="new tree (1).gif">
+<img id="myImg04" style="position:absolute; width: 400px; height:200px; top:10px; left: 1200px;" src="cloud 3.gif">
+ 
+
+
+
+
+<input type=button value="Play" onclick="{
+  clearInterval(myClock)
+  let myTemp = '100px 0px'
+  myClock = setInterval(function(){
+      myGlobalX -= 3
+      myTemp =  myGlobalX + 'px 0px'
+      document.getElementById('myBody').style.backgroundPosition = myTemp
+  }, 100)
+                                        
+  clearInterval(myClock2)
+  myClock2 = setInterval(function(){
+     document.getElementById('myImg03').style.left = parseInt(document.getElementById('myImg03').style.left) + -8 + 'px'
+     myCheckHit()     // checks for all collisions
+   }, 100)
+clearInterval(myClock3)
+  myClock3 = setInterval(function(){
+     document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) + -8 + 'px'
+     myCheckHit()     // checks for all collisions
+   }, 100)
+ clearInterval(myClock4)
+  myClock4 = setInterval(function(){
+     document.getElementById('myImg04').style.left = parseInt(document.getElementById('myImg04').style.left) + -8 + 'px'
+     myCheckHit()     // checks for all collisions
+   }, 100)
+}"><br><br>
+
+
+
+<center>
+   <input type=button value="↑" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+  document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + -20 + 'px'
+  myCheckHit()     // checks for all collisions
+}"><br>
+  
+   <input type=button value="←" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+  document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) +- 20 + 'px'
+  myCheckHit()     // checks for all collisions
+}">
+   
+<input type=button value="→" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+  document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 20 + 'px'
+  myCheckHit()     // checks for all collisions
+}"><br>
+   
+   
+<input type=button value="↓" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+  document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 20 + 'px'
+  myCheckHit()     // checks for all collisions
+}">
+
+
+   </center>
+   
+
+ 
+
+
+   </body>
+   <html>
