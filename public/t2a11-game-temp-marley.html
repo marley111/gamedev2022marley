@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
    
-   <h4> Version 0.6.6 </h4>
+   <h4> Version 0.6.8 </h4>
    <title>Game Template</title>
       
 </head>
@@ -69,7 +69,7 @@ function myCheckHit(){
 
 <img id="myImg01" style="position:absolute; width: 100px; height:120px; top:250px; left:50px;"  src="bird (1).gif" 
  onClick="{
-     document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) +- 20 + 'px'
+     document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) +- 30 + 'px'
      myCheckHit() 
   }">
                                                                                                                                
@@ -95,24 +95,35 @@ function myCheckHit(){
   myClock2 = setInterval(function(){
      document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) + -8 + 'px'
      if (parseInt(document.getElementById('myImg02').style.left) <= -10){
-         document.getElementById('myImg02').style.left = '600px'                                                                    
+         document.getElementById('myImg02').style.left = '1800px'                                                                    
      }                                    
      myCheckHit()     // checks for all collisions
    }, 100)
 clearInterval(myClock3)
   myClock3 = setInterval(function(){
      document.getElementById('myImg03').style.left = parseInt(document.getElementById('myImg03').style.left) + -8 + 'px'
-     myCheckHit()     // checks for all collisions
+     if (parseInt(document.getElementById('myImg03').style.left) <= -10){
+         document.getElementById('myImg03').style.left = '1800px'                                                                    
+     }   
+    myCheckHit()     // checks for all collisions
    }, 100)
  clearInterval(myClock4)
   myClock4 = setInterval(function(){
      document.getElementById('myImg04').style.left = parseInt(document.getElementById('myImg04').style.left) + -8 + 'px'
-     myCheckHit()     // checks for all collisions
+     if (parseInt(document.getElementById('myImg04').style.left) <= -10){
+         document.getElementById('myImg04').style.left = '1800px'                                                                    
+     }   
+   myCheckHit()     // checks for all collisions
    }, 100)                                        
 clearInterval(myClock5)
   myClock5 = setInterval(function(){
-   document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 5 + 'px'
-   myCheckHit()                                 
+   document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 3 + 'px'
+   if (parseInt(document.getElementById('myImg05').style.top) <= 400){
+         document.getElementById('myImg05').style.top = '400px'                                                                    
+     }   
+                                         
+                                         
+  myCheckHit()                                 
    }, 100)
                                          
 }"><br><br>
