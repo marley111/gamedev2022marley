@@ -66,14 +66,13 @@ function myCheckHit(){
 
 </script>
 
-<img id="myImg01" style="position:absolute; width: 100px; height:120px; top:250px; left:50px;"  src="bird (1).gif" onMouseOut="{
-                                                                                                                               
-document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + -20 + 'px'
-myCheckHit()}"
-     
-  onMouseOver="{
-               document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 20 + 'px'
-  myCheckHit() }">
+<img id="myImg01" style="position:absolute; width: 100px; height:120px; top:250px; left:50px;"  src="bird (1).gif" onMouseOut="{                                                                                                                               
+   document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 70 + 'px'
+   myCheckHit()
+}" onMouseOver="{
+     document.getElementById('myImg01').style.top += parseInt(document.getElementById('myImg01').style.top) -10 + 'px'
+     myCheckHit() 
+  }">
                                                                                                                                
                                                                                                                               
 <img id="myImg02" style="position:absolute; width: 180px; height:180px; top:120px; left: 500px;" src="cloud 1 (1).gif">
