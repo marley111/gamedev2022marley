@@ -70,7 +70,7 @@ function myCheckHit(){
    document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 70 + 'px'
    myCheckHit()
 }" onMouseOver="{
-     document.getElementById('myImg01').style.top += parseInt(document.getElementById('myImg01').style.top) -10 + 'px'
+     document.getElementById('myImg01').style.top += parseInt(document.getElementById('myImg01').style.top) -100 + 'px'
      myCheckHit() 
   }">
                                                                                                                                
@@ -95,7 +95,7 @@ function myCheckHit(){
   clearInterval(myClock2)
   myClock2 = setInterval(function(){
      document.getElementById('myImg03').style.left = parseInt(document.getElementById('myImg03').style.left) + -8 + 'px'
-     if (parseInt(document.getElementById('myImg03').style.left) <= -100){
+     if (parseInt(document.getElementById('myImg03').style.left) <= -10){
          document.getElementById('myImg03').style.left = '600px'                                                                    
      }                                    
      myCheckHit()     // checks for all collisions
