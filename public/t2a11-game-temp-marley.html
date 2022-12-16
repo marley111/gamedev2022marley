@@ -94,15 +94,15 @@ function myCheckHit(){
                                         
   clearInterval(myClock2)
   myClock2 = setInterval(function(){
-     document.getElementById('myImg03').style.left = parseInt(document.getElementById('myImg03').style.left) + -8 + 'px'
-     if (parseInt(document.getElementById('myImg03').style.left) <= -10){
-         document.getElementById('myImg03').style.left = '600px'                                                                    
+     document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) + -8 + 'px'
+     if (parseInt(document.getElementById('myImg02').style.left) <= -10){
+         document.getElementById('myImg02').style.left = '600px'                                                                    
      }                                    
      myCheckHit()     // checks for all collisions
    }, 100)
 clearInterval(myClock3)
   myClock3 = setInterval(function(){
-     document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) + -8 + 'px'
+     document.getElementById('myImg03').style.left = parseInt(document.getElementById('myImg03').style.left) + -8 + 'px'
      myCheckHit()     // checks for all collisions
    }, 100)
  clearInterval(myClock4)
