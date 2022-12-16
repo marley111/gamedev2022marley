@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
    
-   <h4> Version 0.6.4 </h4>
+   <h4> Version 0.6.5 </h4>
    <title>Game Template</title>
       
 </head>
@@ -19,6 +19,7 @@
    let myClock2
    let myClock3
    let myClock4
+   let myClock5
 
 
    // global functions here
@@ -66,10 +67,8 @@ function myCheckHit(){
 
 </script>
 
-<img id="myImg01" style="position:absolute; width: 100px; height:120px; top:250px; left:50px;"  src="bird (1).gif" onMouseOut="{                                                                                                                               
-   document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 30 + 'px'
-   myCheckHit()
-}" onMouseOver="{
+<img id="myImg01" style="position:absolute; width: 100px; height:120px; top:250px; left:50px;"  src="bird (1).gif" 
+ onClick="{
      document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) +- 30 + 'px'
      myCheckHit() 
   }">
@@ -109,7 +108,13 @@ clearInterval(myClock3)
   myClock4 = setInterval(function(){
      document.getElementById('myImg04').style.left = parseInt(document.getElementById('myImg04').style.left) + -8 + 'px'
      myCheckHit()     // checks for all collisions
+   }, 100)                                        
+clearInterval(myClock5)
+  myClock5 = setInterval(function(){
+   document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 30 + 'px'
+   myCheckHit()                                 
    }, 100)
+                                         
 }"><br><br>
    
    
