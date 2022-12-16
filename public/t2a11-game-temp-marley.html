@@ -95,6 +95,9 @@ function myCheckHit(){
   clearInterval(myClock2)
   myClock2 = setInterval(function(){
      document.getElementById('myImg03').style.left = parseInt(document.getElementById('myImg03').style.left) + -8 + 'px'
+     if (parseInt(document.getElementById('myImg03').style.left) <= -100){
+         document.getElementById('myImg03').style.left = '600px'                                                                    
+     }                                    
      myCheckHit()     // checks for all collisions
    }, 100)
 clearInterval(myClock3)
