@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<head>
+   
+   <h4> Version 0.8.9 </h4>
+   <title>Game Template</title>
+      
+</head>
+
+
+<body id="myBody" style="background-repeat:repeat; background-size: 100%" background="background1.gif" no-repeat center center fixed;>
+
+
+
+<script>
+
+   // global variables here
+   let myGlobalX = 0
+   let myClock
+   let myClock2
+   let myClock3
+   let myClock4
+   let myClock5
+   let myClock6
+   let myClock7
+   let myClock8
+   let myScore = 0
+
+   // global functions here
+function myHitOther(my1,my2){
+   left1   = parseInt(document.getElementById(my1).style.left)
+   right1  = left1 + parseInt(document.getElementById(my1).style.width)
+   top1    = parseInt(document.getElementById(my1).style.top)   
+   bottom1 = top1   + parseInt(document.getElementById(my1).style.height)
+   left2   = parseInt(document.getElementById(my2).style.left)
+   right2  = left2 + parseInt(document.getElementById(my2).style.width)
+   top2    = parseInt(document.getElementById(my2).style.top)   
+   bottom2 = top2   + parseInt(document.getElementById(my2).style.height)
+   if ((right1  >=  left2  ) &&      	   
+       (bottom1 >=  top2   ) &&
+       (left1   <=  right2 ) &&
+       (top1    <=  bottom2) ){
+       return true
+   }
+}
+
+
+function myCheckHit(){
+   if ( myHitOther('myImg01','myImg02') ){
+       alert('you lose')  
+       document.getElementById('myImg01').style.left = '20px'
+       location = 't2a11-game-temp-marley.html'  // go to your next level
+   }  
+      if ( myHitOther('myImg01','myImg03') ){
+       alert('you lose')  
+       document.getElementById('myImg01').style.left = '20px'
+       location = 't2a11-game-temp-marley.html'  // go to your next level
+   }
+     if ( myHitOther('myImg01', 'myImg04') ){
+       alert('you lose')  
+       document.getElementById('myImg01').style.left = '20px'
+       location = 't2a11-game-temp-marley.html'  // go to your next level
+   }
+   if ( myHitOther('myImg01', 'myImg06') ){
+       alert('you lose')  
+       document.getElementById('myImg01').style.left = '20px'
+       location = 't2a11-game-temp-marley.html'  // go to your next level
+   }
+   
+   
+   if ( myHitOther('myImg01','myImg05') ){
+      mySound2.play()
+       alert('you win')  
+       document.getElementById('myImg01').style.left = '20px'
+       location = 't2a11-game-temp-marley.html'  // go to your next level
+      
+   }
+   if ( myHitOther('myImg01','myImg07') ){
+       document.getElementById('myDiv01').innerHTML = myScore += 1  
+       document.getElementById('myImg07').style.left = '1500px'
+      document.getElementById('myImg07').style.top = '200px'
+     mySound1.play()
+   }
+   
+
+   // more if statements here like the above
+
+
+
+}  // end of myCheckHit()
+
+
+   let mySound1 = new Audio('mixkit-arcade-game-jump-coin-216.wav')
+   let mySound2 = new Audio('mixkit-retro-game-notification-212.wav')
+   
+ 
+   
+</script>
+
+<img id="myImg01" style="position:absolute; width: 100px; height:120px; top:250px; left:50px;"  src="bird (1).gif" 
+ onClick="{
+     document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) +- 30 + 'px'
+     myCheckHit() 
+  }">
+                                                                                                                               
+                                                                                                                              
+<img id="myImg02" style="position:absolute; width: 180px; height:180px; top:120px; left: 450px;" src="cloud 1 (1).gif">
+<img id="myImg03" style="position:absolute; width: 230px; height:450px; top:365px; left: 950px;" src="new tree (1).gif">
+<img id="myImg06" style="position:absolute; width: 230px; height:450px; top:300px; left: 1600px;" src="new tree (1).gif">
+<img id="myImg04" style="position:absolute; width: 300px; height:150px; top:-5px; left: 1100px;" src="cloud 3.gif">
+<img id="myImg05" style="position:absolute; width: 88px; height: 550px; top:200px; left: 3050px;" src="flag.gif">
+<img id="myImg07" style="position:absolute; width: 27px; height: 27px; top:450px; left: 500px;" src="bird money.gif">
+ 
+
+
+
+
+<input type=button value="Play" onclick="{
+  clearInterval(myClock)
+  let myTemp = '100px 0px'
+  myClock = setInterval(function(){
+      myGlobalX -= 3
+      myTemp =  myGlobalX + 'px 0px'
+      document.getElementById('myBody').style.backgroundPosition = myTemp
+  }, 100)
+                                        
+  clearInterval(myClock2)
+  myClock2 = setInterval(function(){
+     document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) + -8 + 'px'
+     if (parseInt(document.getElementById('myImg02').style.left) <= -200){
+         document.getElementById('myImg02').style.left = '1475px' 
+         document.getElementById('myImg02').style.top = '5px'                                
+     }                                    
+     myCheckHit()     // checks for all collisions
+   }, 100)
+clearInterval(myClock3)
+  myClock3 = setInterval(function(){
+     document.getElementById('myImg03').style.left = parseInt(document.getElementById('myImg03').style.left) + -8 + 'px'
+     if (parseInt(document.getElementById('myImg03').style.left) <= -200){
+         document.getElementById('myImg03').style.left = '1500px'                                                                    
+     }   
+    myCheckHit()     // checks for all collisions
+   }, 100)
+ clearInterval(myClock4)
+  myClock4 = setInterval(function(){
+     document.getElementById('myImg04').style.left = parseInt(document.getElementById('myImg04').style.left) + -8 + 'px'
+     if (parseInt(document.getElementById('myImg04').style.left) <= -300){
+         document.getElementById('myImg04').style.left = '1500px'                                                                    
+     }   
+   myCheckHit()     // checks for all collisions
+   }, 100)                                        
+clearInterval(myClock5)
+  myClock5 = setInterval(function(){
+   document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 3 + 'px'                                       
+  myCheckHit()                                 
+   }, 100)
+  clearInterval(myClock6)
+  myClock6 = setInterval(function(){
+     document.getElementById('myImg05').style.left = parseInt(document.getElementById('myImg05').style.left) + -8 + 'px'
+     if (parseInt(document.getElementById('myImg05').style.left) <= -300){
+         document.getElementById('myImg05').style.left = '1500px'                                                                    
+     }   
+   myCheckHit()     // checks for all collisions
+   }, 100)
+ clearInterval(myClock7)
+  myClock7 = setInterval(function(){
+     document.getElementById('myImg06').style.left = parseInt(document.getElementById('myImg06').style.left) + -8 + 'px'
+     if (parseInt(document.getElementById('myImg06').style.left) <= -300){
+         document.getElementById('myImg06').style.left = '1500px'                                                                    
+     }   
+   myCheckHit()     // checks for all collisions
+   }, 100)
+   clearInterval(myClock8)
+  myClock8 = setInterval(function(){
+     document.getElementById('myImg07').style.left = parseInt(document.getElementById('myImg07').style.left) + -8 + 'px'
+     if (parseInt(document.getElementById('myImg07').style.left) <= -300){
+         document.getElementById('myImg07').style.left = '1500px'                                                                    
+     }   
+   myCheckHit()     // checks for all collisions
+   }, 100)               
+                                         
+}"><br><br>
+
+   <div id="myDiv01">...</div>
+   
+   </body>
+   <html>
