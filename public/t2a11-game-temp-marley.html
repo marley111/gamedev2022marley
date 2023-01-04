@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
    
-   <h4> Version 0.8.2 </h4>
+   <h4> Version 0.8.3 </h4>
    <title>Game Template</title>
       
 </head>
@@ -83,10 +83,10 @@ function myCheckHit(){
 </script>
 
 <img id="myImg01" style="position:absolute; width: 100px; height:120px; top:250px; left:50px;"  src="bird (1).gif" 
- onKeyDown="{
-    if (e.keyCode == 32) {
+
+onClick="{
      document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) +- 30 + 'px'
-     }
+     
      myCheckHit() 
   }">
                                                                                                                                
