@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
    
-   <h4> Version 0.8.1 </h4>
+   <h4> Version 0.8.2 </h4>
    <title>Game Template</title>
       
 </head>
@@ -22,6 +22,7 @@
    let myClock5
    let myClock6
    let myClock7
+   let myClock8
 
 
    // global functions here
@@ -71,6 +72,11 @@ function myCheckHit(){
        document.getElementById('myImg01').style.left = '20px'
        location = 't2a11-game-temp-marley.html'  // go to your next level
    }
+   if ( myHitOther('myImg01','myImg07') ){
+       document.getElementById('myDiv01').innerHTML = 1  
+       
+     
+   }
    
 
    // more if statements here like the above
@@ -94,6 +100,7 @@ function myCheckHit(){
 <img id="myImg06" style="position:absolute; width: 230px; height:450px; top:300px; left: 1600px;" src="new tree (1).gif">
 <img id="myImg04" style="position:absolute; width: 300px; height:150px; top:-5px; left: 1100px;" src="cloud 3.gif">
 <img id="myImg05" style="position:absolute; width: 88px; height: 400px; top:325px; left: 3050px;" src="flag.gif">
+<img id="myImg07" style="position:absolute; width: 27px; height: 27px; top:200px; left: 500px;" src="bird money.gif">
  
 
 
@@ -152,10 +159,19 @@ clearInterval(myClock5)
          document.getElementById('myImg06').style.left = '1300px'                                                                    
      }   
    myCheckHit()     // checks for all collisions
-   }, 100)                     
+   }, 100)
+   clearInterval(myClock8)
+  myClock8 = setInterval(function(){
+     document.getElementById('myImg07').style.left = parseInt(document.getElementById('myImg07').style.left) + -8 + 'px'
+     if (parseInt(document.getElementById('myImg07').style.left) <= -300){
+         document.getElementById('myImg07').style.left = '1300px'                                                                    
+     }   
+   myCheckHit()     // checks for all collisions
+   }, 100)               
                                          
 }"><br><br>
-   
+
+   <div id="myDiv01">...</div>
    
    </body>
    <html>
