@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
    
-   <h4> Version 0.8.3 </h4>
+   <h4> Version 0.8.4 </h4>
    <title>Game Template</title>
       
 </head>
@@ -120,8 +120,8 @@ function myCheckHit(){
   myClock2 = setInterval(function(){
      document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) + -8 + 'px'
      if (parseInt(document.getElementById('myImg02').style.left) <= -200){
-         document.getElementById('myImg02').style.left = '1300px' 
-         document.getElementById('myImg02').style.top = '100px'                                
+         document.getElementById('myImg02').style.left = '1500px' 
+         document.getElementById('myImg02').style.top = '50px'                                
      }                                    
      myCheckHit()     // checks for all collisions
    }, 100)
