@@ -61,6 +61,7 @@ function myCheckHit(){
        location = 't2a11-game-temp-marley.html'  // go to your next level
    }
    if ( myHitOther('myImg01', 'myImg06') ){
+      mySound2.play()
        alert('you lose')  
        document.getElementById('myImg01').style.left = '20px'
        location = 't2a11-game-temp-marley.html'  // go to your next level
@@ -71,6 +72,7 @@ function myCheckHit(){
        alert('you win')  
        document.getElementById('myImg01').style.left = '20px'
        location = 't2a11-game-temp-marley.html'  // go to your next level
+      
    }
    if ( myHitOther('myImg01','myImg07') ){
        document.getElementById('myDiv01').innerHTML = 1  
@@ -88,6 +90,9 @@ function myCheckHit(){
 
 
    let mySound1 = new Audio('mixkit-arcade-game-jump-coin-216.wav')
+   let mySound2 = new Audio('mixkit-retro-game-notification-212.wav')
+   
+ 
    
 </script>
 
