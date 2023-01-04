@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
    
-   <h4> Version 0.8.6 </h4>
+   <h4> Version 0.8.7 </h4>
    <title>Game Template</title>
       
 </head>
@@ -61,7 +61,6 @@ function myCheckHit(){
        location = 't2a11-game-temp-marley.html'  // go to your next level
    }
    if ( myHitOther('myImg01', 'myImg06') ){
-      mySound2.play()
        alert('you lose')  
        document.getElementById('myImg01').style.left = '20px'
        location = 't2a11-game-temp-marley.html'  // go to your next level
@@ -69,6 +68,7 @@ function myCheckHit(){
    
    
    if ( myHitOther('myImg01','myImg05') ){
+      mySound2.play()
        alert('you win')  
        document.getElementById('myImg01').style.left = '20px'
        location = 't2a11-game-temp-marley.html'  // go to your next level
