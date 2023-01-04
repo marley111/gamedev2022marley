@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
    
-   <h4> Version 0.7.5 </h4>
+   <h4> Version 0.7.6 </h4>
    <title>Game Template</title>
       
 </head>
@@ -85,7 +85,7 @@ function myCheckHit(){
 <img id="myImg02" style="position:absolute; width: 180px; height:180px; top:120px; left: 500px;" src="cloud 1 (1).gif">
 <img id="myImg03" style="position:absolute; width: 230px; height:450px; top:365px; left: 1000px;" src="new tree (1).gif">
 <img id="myImg04" style="position:absolute; width: 300px; height:150px; top:-5px; left: 1200px;" src="cloud 3.gif">
-<img id="myImg05" style="position:absolute; width: 22px; height: 95px; top:365px; left: 3000px;" src"flag.gif">
+<img id="myImg05" style="position:absolute; width: 44px; height: 190px; top:365px; left: 3000px;" src"flag.gif">
  
 
 
@@ -129,7 +129,7 @@ clearInterval(myClock5)
    document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 3 + 'px'                                       
   myCheckHit()                                 
    }, 100)
-                                         clearInterval(myClock4)
+  clearInterval(myClock6)
   myClock6 = setInterval(function(){
      document.getElementById('myImg05').style.left = parseInt(document.getElementById('myImg05').style.left) + -8 + 'px'
      if (parseInt(document.getElementById('myImg05').style.left) <= -300){
