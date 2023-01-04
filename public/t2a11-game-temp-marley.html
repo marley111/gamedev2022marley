@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
    
-   <h4> Version 0.8.5 </h4>
+   <h4> Version 0.8.6 </h4>
    <title>Game Template</title>
       
 </head>
@@ -76,7 +76,7 @@ function myCheckHit(){
        document.getElementById('myDiv01').innerHTML = 1  
        document.getElementById('myImg07').style.left = '1500px'
       document.getElementById('myImg07').style.top = '200px'
-     
+     mySound1.play()
    }
    
 
@@ -87,6 +87,8 @@ function myCheckHit(){
 }  // end of myCheckHit()
 
 
+   let mySound1 = new Audio('mixkit-arcade-game-jump-coin-216.wav')
+   
 </script>
 
 <img id="myImg01" style="position:absolute; width: 100px; height:120px; top:250px; left:50px;"  src="bird (1).gif" 
@@ -120,8 +122,8 @@ function myCheckHit(){
   myClock2 = setInterval(function(){
      document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) + -8 + 'px'
      if (parseInt(document.getElementById('myImg02').style.left) <= -200){
-         document.getElementById('myImg02').style.left = '1450px' 
-         document.getElementById('myImg02').style.top = '25px'                                
+         document.getElementById('myImg02').style.left = '1475px' 
+         document.getElementById('myImg02').style.top = '5px'                                
      }                                    
      myCheckHit()     // checks for all collisions
    }, 100)
