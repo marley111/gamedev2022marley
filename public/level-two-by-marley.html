@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
    
-   <h4> Version 0.0.4 </h4>
+   <h4> Version 0.0.2 </h4>
    <title>Game Template</title>
       
 </head>
@@ -9,7 +9,6 @@
 
 <body id="myBody" style="background-repeat:repeat; background-size: 100%" background="background2.gif" no-repeat center center fixed; onload="startGame()">
 
-   
 
 
 <script>
@@ -25,7 +24,6 @@
    let myClock7
    let myClock8
    let myScore = 0
-   let mySpeed = 8
 
    // global functions here
 function myHitOther(my1,my2){
@@ -55,7 +53,7 @@ function startGame(){
                                         
   clearInterval(myClock2)
   myClock2 = setInterval(function(){
-     document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) + mySpeed + 'px'
+     document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) + -8 + 'px'
      if (parseInt(document.getElementById('myImg02').style.left) <= -200){
          document.getElementById('myImg02').style.left = '1475px' 
          document.getElementById('myImg02').style.top = '5px'                                
@@ -64,7 +62,7 @@ function startGame(){
    }, 100)
 clearInterval(myClock3)
   myClock3 = setInterval(function(){
-     document.getElementById('myImg03').style.left = parseInt(document.getElementById('myImg03').style.left) + mySpeed + 'px'
+     document.getElementById('myImg03').style.left = parseInt(document.getElementById('myImg03').style.left) + -8 + 'px'
      if (parseInt(document.getElementById('myImg03').style.left) <= -200){
          document.getElementById('myImg03').style.left = '1500px'                                                                    
      }   
@@ -72,7 +70,7 @@ clearInterval(myClock3)
    }, 100)
  clearInterval(myClock4)
   myClock4 = setInterval(function(){
-     document.getElementById('myImg04').style.left = parseInt(document.getElementById('myImg04').style.left) + mySpeed + 'px'
+     document.getElementById('myImg04').style.left = parseInt(document.getElementById('myImg04').style.left) + -8 + 'px'
      if (parseInt(document.getElementById('myImg04').style.left) <= -300){
          document.getElementById('myImg04').style.left = '1500px'                                                                    
      }   
@@ -80,12 +78,12 @@ clearInterval(myClock3)
    }, 100)                                        
 clearInterval(myClock5)
   myClock5 = setInterval(function(){
-   document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + mySpeed + 'px'                                       
+   document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 3 + 'px'                                       
   myCheckHit()                                 
    }, 100)
   clearInterval(myClock6)
   myClock6 = setInterval(function(){
-     document.getElementById('myImg05').style.left = parseInt(document.getElementById('myImg05').style.left) + mySpeed + 'px'
+     document.getElementById('myImg05').style.left = parseInt(document.getElementById('myImg05').style.left) + -8 + 'px'
      if (parseInt(document.getElementById('myImg05').style.left) <= -300){
          document.getElementById('myImg05').style.left = '1500px'                                                                    
      }   
@@ -93,7 +91,7 @@ clearInterval(myClock5)
    }, 100)
  clearInterval(myClock7)
   myClock7 = setInterval(function(){
-     document.getElementById('myImg06').style.left = parseInt(document.getElementById('myImg06').style.left) + mySpeed + 'px'
+     document.getElementById('myImg06').style.left = parseInt(document.getElementById('myImg06').style.left) + -8 + 'px'
      if (parseInt(document.getElementById('myImg06').style.left) <= -300){
          document.getElementById('myImg06').style.left = '1500px'                                                                    
      }   
@@ -101,7 +99,7 @@ clearInterval(myClock5)
    }, 100)
    clearInterval(myClock8)
   myClock8 = setInterval(function(){
-     document.getElementById('myImg07').style.left = parseInt(document.getElementById('myImg07').style.left) + mySpeed + 'px'
+     document.getElementById('myImg07').style.left = parseInt(document.getElementById('myImg07').style.left) + -8 + 'px'
      if (parseInt(document.getElementById('myImg07').style.left) <= -300){
          document.getElementById('myImg07').style.left = '1500px'                                                                    
      }   
@@ -109,7 +107,73 @@ clearInterval(myClock5)
    }, 100)               
                                          
 }
-   
+   function mySpeedUp(){
+      
+    clearInterval(myClock)
+  let myTemp = '100px 0px'
+  myClock = setInterval(function(){
+      myGlobalX -= 5
+      myTemp =  myGlobalX + 'px 0px'
+      document.getElementById('myBody').style.backgroundPosition = myTemp
+  }, 100)
+                                        
+  clearInterval(myClock2)
+  myClock2 = setInterval(function(){
+     document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) + -10 + 'px'
+     if (parseInt(document.getElementById('myImg02').style.left) <= -200){
+         document.getElementById('myImg02').style.left = '1475px' 
+         document.getElementById('myImg02').style.top = '5px'                                
+     }                                    
+     myCheckHit()     // checks for all collisions
+   }, 100)
+clearInterval(myClock3)
+  myClock3 = setInterval(function(){
+     document.getElementById('myImg03').style.left = parseInt(document.getElementById('myImg03').style.left) + -10 + 'px'
+     if (parseInt(document.getElementById('myImg03').style.left) <= -200){
+         document.getElementById('myImg03').style.left = '1500px'                                                                    
+     }   
+    myCheckHit()     // checks for all collisions
+   }, 100)
+ clearInterval(myClock4)
+  myClock4 = setInterval(function(){
+     document.getElementById('myImg04').style.left = parseInt(document.getElementById('myImg04').style.left) + -10 + 'px'
+     if (parseInt(document.getElementById('myImg04').style.left) <= -300){
+         document.getElementById('myImg04').style.left = '1500px'                                                                    
+     }   
+   myCheckHit()     // checks for all collisions
+   }, 100)                                        
+clearInterval(myClock5)
+  myClock5 = setInterval(function(){
+   document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 8 + 'px'                                       
+  myCheckHit()                                 
+   }, 100)
+  clearInterval(myClock6)
+  myClock6 = setInterval(function(){
+     document.getElementById('myImg05').style.left = parseInt(document.getElementById('myImg05').style.left) + -10 + 'px'
+     if (parseInt(document.getElementById('myImg05').style.left) <= -300){
+         document.getElementById('myImg05').style.left = '1500px'                                                                    
+     }   
+   myCheckHit()     // checks for all collisions
+   }, 100)
+ clearInterval(myClock7)
+  myClock7 = setInterval(function(){
+     document.getElementById('myImg06').style.left = parseInt(document.getElementById('myImg06').style.left) + -10 + 'px'
+     if (parseInt(document.getElementById('myImg06').style.left) <= -300){
+         document.getElementById('myImg06').style.left = '1500px'                                                                    
+     }   
+   myCheckHit()     // checks for all collisions
+   }, 100)
+   clearInterval(myClock8)
+  myClock8 = setInterval(function(){
+     document.getElementById('myImg07').style.left = parseInt(document.getElementById('myImg07').style.left) + -10 + 'px'
+     if (parseInt(document.getElementById('myImg07').style.left) <= -300){
+         document.getElementById('myImg07').style.left = '1500px'                                                                    
+     }   
+   myCheckHit()     // checks for all collisions
+   }, 100)               
+                                         
+} 
+
 function myCheckHit(){
    if ( myHitOther('myImg01','myImg02') ){
        alert('you lose')  
@@ -144,8 +208,7 @@ function myCheckHit(){
        document.getElementById('myDiv01').innerHTML = myScore += 1  
        document.getElementById('myImg07').style.left = '1500px'
       document.getElementById('myImg07').style.top = '200px'
-      let mySpeed  -= 5
-    
+    mySpeedUp()
    }
    
 
@@ -170,12 +233,12 @@ function myCheckHit(){
   }">
                                                                                                                                
                                                                                                                               
-<img id="myImg02" style="position:absolute; width: 180px; height:180px; top:50px; left: 700px;" src="cloud 1 (1).gif">
-<img id="myImg03" style="position:absolute; width: 230px; height:450px; top:350px; left: 350px;" src="apple.gif">
-<img id="myImg06" style="position:absolute; width: 230px; height:450px; top:300px; left: 1000px;" src="squirrel.gif">
-<img id="myImg04" style="position:absolute; width: 300px; height:150px; top:-5px; left: 1500px;" src="cloud 3.gif">
+<img id="myImg02" style="position:absolute; width: 180px; height:180px; top:120px; left: 450px;" src="cloud 1 (1).gif">
+<img id="myImg03" style="position:absolute; width: 230px; height:450px; top:350px; left: 950px;" src="apple.gif">
+<img id="myImg06" style="position:absolute; width: 230px; height:450px; top:300px; left: 1600px;" src="squirrel.gif">
+<img id="myImg04" style="position:absolute; width: 300px; height:150px; top:-5px; left: 1100px;" src="cloud 3.gif">
 <img id="myImg05" style="position:absolute; width: 88px; height: 550px; top:200px; left: 3050px;" src="flag.gif">
-<img id="myImg07" style="position:absolute; width: 27px; height: 27px; top:300px; left: 550px;" src="fruit.gif">
+<img id="myImg07" style="position:absolute; width: 27px; height: 27px; top:450px; left: 500px;" src="fruit.gif">
 
  
 
