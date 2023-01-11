@@ -1,0 +1,8 @@
+document.body.addEventListener("keyDown", function(event){
+   if(event.keyCode == 16){
+   document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) +- 30 + 'px'
+     myCheckHit() 
+   }
+   keys[event.keyCode] = true;
+   });
+   
