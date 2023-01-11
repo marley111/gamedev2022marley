@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
    
-   <h4> Version 0.0.5 </h4>
+   <h4> Version 0.0.3 </h4>
    <title>Game Template</title>
       
 </head>
@@ -223,24 +223,15 @@ function myCheckHit(){
    let mySound1 = new Audio('mixkit-arcade-game-jump-coin-216.wav')
    let mySound2 = new Audio('mixkit-retro-game-notification-212.wav')
    
- function KeyUpFunction() { 
- clearInterval(myClock5)
-  myClock5 = setInterval(function(){
-   document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 3 + 'px'                                       
-  myCheckHit()                                 
-   }, 100)}
-   
-    function KeyDownFunction() {
-    document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) +- 30 + 'px'
-     myCheckHit() 
-    }
+ 
    
 </script>
 
-<img id="myImg01" style="position:absolute; width: 100px; height:120px; top:250px; left:50px;"  src="bird (1).gif" onKeyDown="KeyDownFunction() onKeyUp="KeyUpFunction()""
-
-     
-
+<img id="myImg01" style="position:absolute; width: 100px; height:120px; top:250px; left:50px;"  src="bird (1).gif" 
+ onClick="{
+     document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) +- 30 + 'px'
+     myCheckHit() 
+  }">
                                                                                                                                
                                                                                                                               
 <img id="myImg02" style="position:absolute; width: 180px; height:180px; top:120px; left: 350px;" src="cloud 1 (1).gif">
