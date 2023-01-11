@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
    
-   <h4> Version 0.0.6 </h4>
+   <h4> Version 0.0.7 </h4>
    <title>Game Template</title>
       
 </head>
@@ -177,30 +177,26 @@ clearInterval(myClock5)
 function myCheckHit(){
    if ( myHitOther('myImg01','myImg02') ){
        alert('you lose')  
-       document.getElementById('myImg01').style.left = '20px'
-       location = 't2a11-game-temp-marley.html'  
+       location = 't2a11-game-temp-marley.html'  // go to your next level
    }  
       if ( myHitOther('myImg01','myImg03') ){
        alert('you lose')  
-       document.getElementById('myImg01').style.left = '20px'
-       location = 't2a11-game-temp-marley.html'  
+       location = 't2a11-game-temp-marley.html'  // go to your next level
    }
      if ( myHitOther('myImg01', 'myImg04') ){
        alert('you lose')  
-       document.getElementById('myImg01').style.left = '20px'
-       location = 't2a11-game-temp-marley.html'  
+       location = 't2a11-game-temp-marley.html'  // go to your next level
    }
    if ( myHitOther('myImg01', 'myImg06') ){
        alert('you lose')  
-       document.getElementById('myImg01').style.left = '20px'
-       location = 't2a11-game-temp-marley.html'  
+       location = 't2a11-game-temp-marley.html'  // go to your next level
    }
    
    
    if ( myHitOther('myImg01','myImg05') ){
       mySound2.play()
        alert('you win')  
-       location = 'level-two-by-marley.html'  
+       location = 'level-two-by-marley.html'  // go to your next level
       
    }
    if ( myHitOther('myImg01','myImg07') ){
@@ -211,14 +207,15 @@ function myCheckHit(){
    }
    
 
+   // more if statements here like the above
 
 
 
-}  
+}  // end of myCheckHit()
 
 
    let mySound1 = new Audio('mixkit-arcade-game-jump-coin-216.wav')
-   
+   let mySound2 = new Audio('mixkit-retro-game-notification-212.wav')
    
  
    
