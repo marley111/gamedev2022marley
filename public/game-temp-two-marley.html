@@ -227,11 +227,19 @@ function myCheckHit(){
    
 </script>
 
-<img id="myImg01" style="position:absolute; width: 100px; height:120px; top:250px; left:50px;"  src="bird (1).gif" 
- onClick="{
+<img id="myImg01" style="position:absolute; width: 100px; height:120px; top:250px; left:50px;"  src="bird (1).gif">
+
+     
+     document.body.onkeyup = function(e) {
+  if (e.key == " " ||
+      e.code == "Space" ||      
+      e.keyCode == 32      
+  ) {
      document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) +- 30 + 'px'
      myCheckHit() 
-  }">
+  }
+}
+
                                                                                                                                
                                                                                                                               
 <img id="myImg02" style="position:absolute; width: 180px; height:180px; top:120px; left: 350px;" src="cloud 1 (1).gif">
