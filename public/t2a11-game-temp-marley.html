@@ -136,13 +136,12 @@ function myCheckHit(){
    
    if ( myHitOther('myImg01','myImg05') ){
       mySound1.play()
-       
-       document.getElementById('myImg01').style.left = '20px'
+
        location = 'level-two-by-marley.html' 
       
    }
    if ( myHitOther('myImg01','myImg07') ){
-       document.getElementById('myDiv01').innerHTML = myScore += 1  
+       document.getElementById('myDiv01').innerHTML = myScore += 100  
        document.getElementById('myImg07').style.left = '1500px'
       document.getElementById('myImg07').style.top = '200px'
      mySound1.play()
