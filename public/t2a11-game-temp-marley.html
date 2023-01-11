@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
    
-   <h4> Version 0.9.6 </h4>
+   <h4> Version 0.9.7 </h4>
    <title>Game Template</title>
       
 </head>
@@ -160,13 +160,18 @@ function myCheckHit(){
    
  
    
-</script>
 
-<img id="myImg01" style="position:absolute; width: 100px; height:120px; top:250px; left:50px;"  src="bird (1).gif" 
- onClick="{
-     document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) +- 30 + 'px'
+
+document.body.addEventListener("keyDown", function(event){
+   if(event.keyCode == 32){
+   ocument.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) +- 30 + 'px'
      myCheckHit() 
-  }">
+   }
+   keys[event.keyCode] = true;
+   });
+   
+   </script>  
+<img id="myImg01" style="position:absolute; width: 100px; height:120px; top:250px; left:50px;"  src="bird (1).gif">
                                                                                                                                
                                                                                                                               
 <img id="myImg02" style="position:absolute; width: 180px; height:180px; top:120px; left: 450px;" src="cloud 1 (1).gif">
