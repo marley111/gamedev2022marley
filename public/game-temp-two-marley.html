@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
    
-   <h4> Version 0.0.5 </h4>
+   <h4> Version 0.0.6 </h4>
    <title>Game Template</title>
       
 </head>
@@ -13,7 +13,6 @@
 
 <script>
 
-   // global variables here
    let myGlobalX = 0
    let myClock
    let myClock2
@@ -25,7 +24,7 @@
    let myClock8
    let myScore = 0
 
-   // global functions here
+
 function myHitOther(my1,my2){
    left1   = parseInt(document.getElementById(my1).style.left)
    right1  = left1 + parseInt(document.getElementById(my1).style.width)
@@ -58,7 +57,7 @@ function startGame(){
          document.getElementById('myImg02').style.left = '1650px' 
          document.getElementById('myImg02').style.top = '5px'                                
      }                                    
-     myCheckHit()     // checks for all collisions
+     myCheckHit()     
    }, 100)
 clearInterval(myClock3)
   myClock3 = setInterval(function(){
@@ -66,7 +65,7 @@ clearInterval(myClock3)
      if (parseInt(document.getElementById('myImg03').style.left) <= -200){
          document.getElementById('myImg03').style.left = '1500px'                                                                    
      }   
-    myCheckHit()     // checks for all collisions
+    myCheckHit()    
    }, 100)
  clearInterval(myClock4)
   myClock4 = setInterval(function(){
@@ -74,7 +73,7 @@ clearInterval(myClock3)
      if (parseInt(document.getElementById('myImg04').style.left) <= -300){
          document.getElementById('myImg04').style.left = '1500px'                                                                    
      }   
-   myCheckHit()     // checks for all collisions
+   myCheckHit()     
    }, 100)                                        
 clearInterval(myClock5)
   myClock5 = setInterval(function(){
@@ -87,7 +86,7 @@ clearInterval(myClock5)
      if (parseInt(document.getElementById('myImg05').style.left) <= -300){
          document.getElementById('myImg05').style.left = '1500px'                                                                    
      }   
-   myCheckHit()     // checks for all collisions
+   myCheckHit()   
    }, 100)
  clearInterval(myClock7)
   myClock7 = setInterval(function(){
@@ -95,7 +94,7 @@ clearInterval(myClock5)
      if (parseInt(document.getElementById('myImg06').style.left) <= -300){
          document.getElementById('myImg06').style.left = '1500px'                                                                    
      }   
-   myCheckHit()     // checks for all collisions
+   myCheckHit()    
    }, 100)
    clearInterval(myClock8)
   myClock8 = setInterval(function(){
@@ -103,7 +102,7 @@ clearInterval(myClock5)
      if (parseInt(document.getElementById('myImg07').style.left) <= -300){
          document.getElementById('myImg07').style.left = '1500px'                                                                    
      }   
-   myCheckHit()     // checks for all collisions
+   myCheckHit()   
    }, 100)               
                                          
 }
@@ -124,7 +123,7 @@ clearInterval(myClock5)
          document.getElementById('myImg02').style.left = '1650px' 
          document.getElementById('myImg02').style.top = '0px'                                
      }                                    
-     myCheckHit()     // checks for all collisions
+     myCheckHit()   
    }, 100)
 clearInterval(myClock3)
   myClock3 = setInterval(function(){
@@ -132,7 +131,7 @@ clearInterval(myClock3)
      if (parseInt(document.getElementById('myImg03').style.left) <= -200){
          document.getElementById('myImg03').style.left = '1500px'                                                                    
      }   
-    myCheckHit()     // checks for all collisions
+    myCheckHit()     
    }, 100)
  clearInterval(myClock4)
   myClock4 = setInterval(function(){
@@ -140,7 +139,7 @@ clearInterval(myClock3)
      if (parseInt(document.getElementById('myImg04').style.left) <= -300){
          document.getElementById('myImg04').style.left = '1500px'                                                                    
      }   
-   myCheckHit()     // checks for all collisions
+   myCheckHit()    
    }, 100)                                        
 clearInterval(myClock5)
   myClock5 = setInterval(function(){
@@ -154,7 +153,7 @@ clearInterval(myClock5)
      if (parseInt(document.getElementById('myImg05').style.left) <= -300){
          document.getElementById('myImg05').style.left = '1500px'                                                                    
      }   
-   myCheckHit()     // checks for all collisions
+   myCheckHit()   
    }, 100)
  clearInterval(myClock7)
   myClock7 = setInterval(function(){
@@ -162,7 +161,7 @@ clearInterval(myClock5)
      if (parseInt(document.getElementById('myImg06').style.left) <= -300){
          document.getElementById('myImg06').style.left = '1500px'                                                                    
      }   
-   myCheckHit()     // checks for all collisions
+   myCheckHit()    
    }, 100)
    clearInterval(myClock8)
   myClock8 = setInterval(function(){
@@ -170,7 +169,7 @@ clearInterval(myClock5)
      if (parseInt(document.getElementById('myImg07').style.left) <= -300){
          document.getElementById('myImg07').style.left = '1500px'                                                                    
      }   
-   myCheckHit()     // checks for all collisions
+   myCheckHit()    
    }, 100)               
                                          
 } 
@@ -179,22 +178,22 @@ function myCheckHit(){
    if ( myHitOther('myImg01','myImg02') ){
        alert('you lose')  
        document.getElementById('myImg01').style.left = '20px'
-       location = 't2a11-game-temp-marley.html'  // go to your next level
+       location = 't2a11-game-temp-marley.html'
    }  
       if ( myHitOther('myImg01','myImg03') ){
        alert('you lose')  
        document.getElementById('myImg01').style.left = '20px'
-       location = 't2a11-game-temp-marley.html'  // go to your next level
+       location = 't2a11-game-temp-marley.html'  
    }
      if ( myHitOther('myImg01', 'myImg04') ){
        alert('you lose')  
        document.getElementById('myImg01').style.left = '20px'
-       location = 't2a11-game-temp-marley.html'  // go to your next level
+       location = 't2a11-game-temp-marley.html'  
    }
    if ( myHitOther('myImg01', 'myImg06') ){
        alert('you lose')  
        document.getElementById('myImg01').style.left = '20px'
-       location = 't2a11-game-temp-marley.html'  // go to your next level
+       location = 't2a11-game-temp-marley.html' 
    }
    
    
@@ -202,7 +201,7 @@ function myCheckHit(){
       mySound2.play()
        alert('you win')  
        document.getElementById('myImg01').style.left = '20px'
-       location = 'level-two-by-marley.html'  // go to your next level
+       location = 'level-two-by-marley.html'
       
    }
    if ( myHitOther('myImg01','myImg07') ){
@@ -212,16 +211,11 @@ function myCheckHit(){
     mySpeedUp()
    }
    
-
-   // more if statements here like the above
-
-
-
-}  // end of myCheckHit()
+}
 
 
    let mySound1 = new Audio('mixkit-arcade-game-jump-coin-216.wav')
-   let mySound2 = new Audio('mixkit-retro-game-notification-212.wav')
+   
    
  
    
