@@ -59,8 +59,8 @@ function startGame(){
      document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) + mySpeed + 'px'
      if (parseInt(document.getElementById('myImg02').style.left) <= -200){
          document.getElementById('myImg02').style.left = '1650px' 
-         document.getElementById('myImg02').style.top = '5px'                                
-     }                                    
+         document.getElementById('myImg02').style.top = '5px'
+           }                                    
      myCheckHit()     // checks for all collisions
    }, 100)
 clearInterval(myClock3)
@@ -138,7 +138,7 @@ function myCheckHit(){
       
    }
    if ( myHitOther('myImg01','myImg07') ){
-       document.getElementById('myDiv01').innerHTML = myScore += 100  
+       document.getElementById('myDiv01').innerHTML = myScore += 500  
        document.getElementById('myImg07').style.left = '1500px'
       document.getElementById('myImg07').style.top = '200px'
       mySpeed += -5
