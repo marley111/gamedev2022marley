@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
    
-   <h4> Version 1.0.0 </h4>
+   <h4> Version 1.0.1 </h4>
    <title>Game Template</title>
       
 </head>
@@ -60,7 +60,10 @@ function startGame(){
      if (parseInt(document.getElementById('myImg02').style.left) <= -200){
          document.getElementById('myImg02').style.left = '1475px' 
          document.getElementById('myImg02').style.top = '5px'                                
-     }                                    
+     }    
+          if (parseInt(document.getElementById('myImg02').style.left) == 50){
+        document.getElementById('myDiv01').innerHTML = myScore += 100
+     }
      myCheckHit()    
    }, 100)
 clearInterval(myClock3)
@@ -69,6 +72,9 @@ clearInterval(myClock3)
      if (parseInt(document.getElementById('myImg03').style.left) <= -200){
          document.getElementById('myImg03').style.left = '1500px'                                                                    
      }   
+          if (parseInt(document.getElementById('myImg03').style.left) == 50){
+        document.getElementById('myDiv01').innerHTML = myScore += 100
+     }
     myCheckHit()    
    }, 100)
  clearInterval(myClock4)
@@ -77,11 +83,17 @@ clearInterval(myClock3)
      if (parseInt(document.getElementById('myImg04').style.left) <= -300){
          document.getElementById('myImg04').style.left = '1500px'                                                                    
      }   
+          if (parseInt(document.getElementById('myImg04').style.left) == 50){
+        document.getElementById('myDiv01').innerHTML = myScore += 100
+     }
    myCheckHit()    
    }, 100)                                        
 clearInterval(myClock5)
   myClock5 = setInterval(function(){
-   document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 3 + 'px'                                       
+   document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 3 + 'px'  
+         if (parseInt(document.getElementById('myImg01').style.top) >= 500){
+         document.getElementById('myImg01').style.top = '250px'                                                                    
+     }  
   myCheckHit()                                 
    }, 100)
   clearInterval(myClock6)
@@ -90,6 +102,9 @@ clearInterval(myClock5)
      if (parseInt(document.getElementById('myImg05').style.left) <= -300){
          document.getElementById('myImg05').style.left = '1500px'                                                                    
      }   
+           if (parseInt(document.getElementById('myImg05').style.left) == 50){
+        document.getElementById('myDiv01').innerHTML = myScore += 100
+     }
    myCheckHit()    
    }, 100)
  clearInterval(myClock7)
@@ -98,6 +113,9 @@ clearInterval(myClock5)
      if (parseInt(document.getElementById('myImg06').style.left) <= -300){
          document.getElementById('myImg06').style.left = '1500px'                                                                    
      }   
+           if (parseInt(document.getElementById('myImg05').style.left) == 50){
+        document.getElementById('myDiv01').innerHTML = myScore += 100
+     }
    myCheckHit()   
    }, 100)
    clearInterval(myClock8)
@@ -106,6 +124,9 @@ clearInterval(myClock5)
      if (parseInt(document.getElementById('myImg07').style.left) <= -300){
          document.getElementById('myImg07').style.left = '1500px'                                                                    
      }   
+           if (parseInt(document.getElementById('myImg05').style.left) == 50){
+        document.getElementById('myDiv01').innerHTML = myScore += 100
+     }
    myCheckHit()    
    }, 100)               
                                          
